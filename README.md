@@ -5,10 +5,8 @@ TODO
 Usage
 -----
 1. Install awesome
-
-   sudo apt-get install awesome awesome-extra menu-l10n conky-all
+ sudo apt-get install awesome awesome-extra menu-l10n conky-all pidgin pidgin-plugin-pack pidgin-awayonlock thunderbird
 
 2. Clone the repository
-
-   cd ~/.config
-   git clone https://github.com/thuetz/awesome-config awesome
+ cd ~/.config
+ git clone https://github.com/thuetz/awesome-config awesome
