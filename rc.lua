@@ -376,3 +376,12 @@ end)
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+
+-- {{{ Startup applications
+-- A list of commands executed after the login process
+awful.util.spawn( "google-chrome" );
+awful.util.spawn( "thunderbird" );
+awful.util.spawn( "skype" );
+awful.util.spawn( "pidgin" );
+awful.util.spawn( "gnome-terminal" );
+-- }}}
