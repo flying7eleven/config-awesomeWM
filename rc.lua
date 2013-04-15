@@ -70,8 +70,8 @@ layouts =
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {
-	names = { "main", "www", "email", "skype", "pidgin", "term", 7, 8, 9 }, 
-	layout = { layouts[ 2 ], layouts[ 5 ], layouts[ 5 ], layouts[ 2 ], layouts[ 2 ], layouts[ 2 ], layouts[ 2 ], layouts[ 2 ], layouts[ 2 ] }
+	names = { "main", "www", "email", "skype", "pidgin", "term", "eclipse", 8, 9 }, 
+	layout = { layouts[ 2 ], layouts[ 5 ], layouts[ 5 ], layouts[ 2 ], layouts[ 2 ], layouts[ 2 ], layouts[ 5 ], layouts[ 2 ], layouts[ 2 ] }
 }
 for s = 1, screen.count() do
 	tags[ s ] = awful.tag( tags.names, s, tags.layout )
