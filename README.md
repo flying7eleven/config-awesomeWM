@@ -5,8 +5,10 @@ TODO
 Usage
 -----
 1. Install awesome
-   sudo apt-get install awesome awesome-extra menu-l10n
+
+   sudo apt-get install awesome awesome-extra menu-l10n conky-all
 
 2. Clone the repository
+
    cd ~/.config
    git clone https://github.com/thuetz/awesome-config awesome
