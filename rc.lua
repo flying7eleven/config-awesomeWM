@@ -42,6 +42,9 @@ terminal = "x-terminal-emulator"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
+--
+shutdown = "zenity --question --text \"Are you sure you want to halt?\" && gksudo halt"
+
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
 -- If you do not like this or do not have such a key,
@@ -84,7 +87,8 @@ myawesomemenu = {
 --   { "manual", terminal .. " -e man awesome" },
 --   { "edit config", editor_cmd .. " " .. awesome.conffile },
    { "restart wm", awesome.restart },
-   { "logout", awesome.quit }
+   { "logout", awesome.quit },
+   { "shutdown", shutdown }
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
