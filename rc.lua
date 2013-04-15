@@ -340,7 +340,9 @@ awful.rules.rules = {
     { rule = { class = "Skype" },
       properties = { tag = tags[ 1 ][ 4 ] } },
     { rule = { class = "Pidgin" },
-      properties = { tag = tags[ 1 ][ 5 ] } }
+      properties = { tag = tags[ 1 ][ 5 ] } },
+    { rule = { class = "Gnome-terminal" },
+      properties = { tag = tags[ 1 ][ 6 ] } }
 }
 -- }}}
 
