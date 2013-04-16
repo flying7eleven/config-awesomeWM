@@ -43,7 +43,11 @@ editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
 --
-shutdown = "zenity --question --text \"Are you sure you want to halt?\" && gksudo halt"
+myshutdown = "zenity --question --text \"Are you sure you want to halt?\" && gksudo halt"
+function myrestart()
+	awful.util.spawn( "killall conky" )
+	awesome.restart()
+end
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -86,7 +90,7 @@ end
 myawesomemenu = {
 --   { "manual", terminal .. " -e man awesome" },
 --   { "edit config", editor_cmd .. " " .. awesome.conffile },
-   { "restart wm", awesome.restart },
+   { "restart wm", myrestart },
    { "logout", awesome.quit },
    { "shutdown", shutdown }
 }
