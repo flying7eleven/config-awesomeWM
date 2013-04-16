@@ -93,7 +93,7 @@ layouts =
 -- Define a tag table which hold all screen tags.
 tags = {
 	names = { "main", "www", "email", "skype", "pidgin", "term", "eclipse", "nautilus", 9 }, 
-	layout = { layouts[ 2 ], layouts[ 5 ], layouts[ 5 ], layouts[ 2 ], layouts[ 2 ], layouts[ 3 ], layouts[ 5 ], layouts[ 2 ], layouts[ 2 ] }
+	layout = { layouts[ 1 ], layouts[ 5 ], layouts[ 5 ], layouts[ 2 ], layouts[ 2 ], layouts[ 3 ], layouts[ 5 ], layouts[ 2 ], layouts[ 2 ] }
 }
 for s = 1, screen.count() do
 	tags[ s ] = awful.tag( tags.names, s, tags.layout )
@@ -354,8 +354,17 @@ awful.rules.rules = {
       properties = { border_width = beautiful.border_width,
                      border_color = beautiful.border_normal,
                      focus = true,
+                     placement = centered,
                      keys = clientkeys,
                      buttons = clientbuttons } },
+    { rule = { class = "fiji-Main" },
+      properties = { maximized_vertical = false,
+                     maximized_horizontal = false,
+                     floating = true } },
+    { rule = { instance = "sun-awt-X11-XFramePeer" },
+      properties = { maximized_vertical = false,
+                     maximized_horizontal = false,
+                     floating = true } },
     { rule = { class = "Google-chrome" },
       properties = { tag = tags[ 1 ][ 2 ] } },
     { rule = { class = "Thunderbird" },
