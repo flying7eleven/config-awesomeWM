@@ -389,7 +389,7 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 
 -- {{{ Startup applications
 -- A list of commands executed after the login process
-awful.util.spawn( "conky -c ~/.config/awesome/configs/conky.conf" );
+-- awful.util.spawn( "conky -c ~/.config/awesome/configs/conky.conf" );
 -- awful.util.spawn( "google-chrome" );
 -- awful.util.spawn( "thunderbird" );
 -- awful.util.spawn( "skype" );
