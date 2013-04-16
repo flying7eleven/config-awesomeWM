@@ -366,6 +366,8 @@ awful.rules.rules = {
       properties = { tag = tags[ 1 ][ 5 ] } },
     { rule = { class = "Gnome-terminal" },
       properties = { tag = tags[ 1 ][ 6 ] } },
+    { rule = { class = "Eclipse" },
+      properties = { tag = tags[ 1 ][ 7 ] } },
     { rule = { class = "Nautilus" },
       properties = { tag = tags[ 1 ][ 8 ] } }
 }
