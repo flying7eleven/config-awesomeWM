@@ -77,8 +77,8 @@ layouts =
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {
-	names = { "main", "www", "email", "skype", "pidgin", "term", "eclipse", 8, 9 }, 
-	layout = { layouts[ 2 ], layouts[ 5 ], layouts[ 5 ], layouts[ 2 ], layouts[ 2 ], layouts[ 2 ], layouts[ 5 ], layouts[ 2 ], layouts[ 2 ] }
+	names = { "main", "www", "email", "skype", "pidgin", "term", "eclipse", "nautilus", 9 }, 
+	layout = { layouts[ 2 ], layouts[ 5 ], layouts[ 5 ], layouts[ 2 ], layouts[ 2 ], layouts[ 3 ], layouts[ 5 ], layouts[ 2 ], layouts[ 2 ] }
 }
 for s = 1, screen.count() do
 	tags[ s ] = awful.tag( tags.names, s, tags.layout )
@@ -350,7 +350,9 @@ awful.rules.rules = {
     { rule = { class = "Pidgin" },
       properties = { tag = tags[ 1 ][ 5 ] } },
     { rule = { class = "Gnome-terminal" },
-      properties = { tag = tags[ 1 ][ 6 ] } }
+      properties = { tag = tags[ 1 ][ 6 ] } },
+    { rule = { class = "Nautilus" },
+      properties = { tag = tags[ 1 ][ 8 ] } }
 }
 -- }}}
 
