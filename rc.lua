@@ -42,6 +42,11 @@ terminal = "x-terminal-emulator"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
+-- Include our external scripts
+require( "inc.tags" )
+require( "inc/rules_fiji" )
+require( "inc/rules_pidgin" )
+
 --
 myshutdown = "zenity --question --text \"Are you sure you want to halt?\" && gksudo halt"
 function myrestart()
@@ -87,17 +92,6 @@ layouts =
 --    awful.layout.suit.max.fullscreen,
 --    awful.layout.suit.magnifier
 }
--- }}}
-
--- {{{ Tags
--- Define a tag table which hold all screen tags.
-tags = {
-	names = { "main", "www", "email", "skype", "pidgin", "term", "eclipse", "nautilus", 9 }, 
-	layout = { layouts[ 1 ], layouts[ 5 ], layouts[ 5 ], layouts[ 2 ], layouts[ 2 ], layouts[ 3 ], layouts[ 5 ], layouts[ 2 ], layouts[ 2 ] }
-}
-for s = 1, screen.count() do
-	tags[ s ] = awful.tag( tags.names, s, tags.layout )
-end
 -- }}}
 
 -- {{{ Menu
@@ -357,28 +351,25 @@ awful.rules.rules = {
                      placement = centered,
                      keys = clientkeys,
                      buttons = clientbuttons } },
-    { rule = { class = "fiji-Main" },
-      properties = { maximized_vertical = false,
-                     maximized_horizontal = false,
-                     floating = true } },
-    { rule = { instance = "sun-awt-X11-XFramePeer" },
-      properties = { maximized_vertical = false,
-                     maximized_horizontal = false,
-                     floating = true } },
+    -- Add the external Fiji rules
+    rule_fiji_01,
+    rule_fiji_02,
+
+    -- Add the external Pidgin rules
+    rule_pidgin_01,
+
     { rule = { class = "Google-chrome" },
-      properties = { tag = tags[ 1 ][ 2 ] } },
+      properties = { tag = tags[ 1 ][ 1 ] } },
     { rule = { class = "Thunderbird" },
-      properties = { tag = tags[ 1 ][ 3 ] } },
+      properties = { tag = tags[ 1 ][ 2 ] } },
     { rule = { class = "Skype" },
-      properties = { tag = tags[ 1 ][ 4 ] } },
-    { rule = { class = "Pidgin" },
-      properties = { tag = tags[ 1 ][ 5 ] } },
+      properties = { tag = tags[ 1 ][ 3 ] } },
     { rule = { class = "Gnome-terminal" },
-      properties = { tag = tags[ 1 ][ 6 ] } },
+      properties = { tag = tags[ 1 ][ 5 ] } },
     { rule = { class = "Eclipse" },
-      properties = { tag = tags[ 1 ][ 7 ] } },
+      properties = { tag = tags[ 1 ][ 6 ] } },
     { rule = { class = "Nautilus" },
-      properties = { tag = tags[ 1 ][ 8 ] } }
+      properties = { tag = tags[ 1 ][ 7 ] } }
 }
 -- }}}
 
