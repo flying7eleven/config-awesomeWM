@@ -44,10 +44,10 @@ editor_cmd = terminal .. " -e " .. editor
 
 -- Include our external scripts
 require( "inc.tags" )
-require( "inc.rules_www" )
-require( "inc.rules_email" )
-require( "inc.rules_fiji" )
-require( "inc.rules_pidgin" )
+require( "inc.rules.www" )
+require( "inc.rules.email" )
+require( "inc.rules.fiji" )
+require( "inc.rules.pidgin" )
 
 --
 myshutdown = "zenity --question --text \"Are you sure you want to halt?\" && gksudo halt"
