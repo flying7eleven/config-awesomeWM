@@ -48,6 +48,9 @@ require( "inc.rules.www" )
 require( "inc.rules.email" )
 require( "inc.rules.fiji" )
 require( "inc.rules.pidgin" )
+require( "inc.rules.skype" )
+require( "inc.rules.eclipse" )
+require( "inc.rules.terminal" )
 
 --
 myshutdown = "zenity --question --text \"Are you sure you want to halt?\" && gksudo halt"
@@ -366,14 +369,14 @@ awful.rules.rules = {
     -- Add the external Pidgin rules
     rule_pidgin_01,
 
-    { rule = { class = "Skype" },
-      properties = { tag = tags[ 1 ][ 3 ] } },
-    { rule = { class = "Gnome-terminal" },
-      properties = { tag = tags[ 1 ][ 5 ] } },
-    { rule = { class = "Eclipse" },
-      properties = { tag = tags[ 1 ][ 6 ] } },
-    { rule = { class = "Nautilus" },
-      properties = { tag = tags[ 1 ][ 7 ] } }
+    -- Add the external rules for Skype
+    rule_skype_01,
+
+    -- Add the external rules for Eclipse
+    rule_eclipse_01,
+
+    -- Add the external rules for the terminal
+    rule_terminal_01
 }
 -- }}}
 
