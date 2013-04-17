@@ -44,8 +44,10 @@ editor_cmd = terminal .. " -e " .. editor
 
 -- Include our external scripts
 require( "inc.tags" )
-require( "inc/rules_fiji" )
-require( "inc/rules_pidgin" )
+require( "inc.rules_www" )
+require( "inc.rules_email" )
+require( "inc.rules_fiji" )
+require( "inc.rules_pidgin" )
 
 --
 myshutdown = "zenity --question --text \"Are you sure you want to halt?\" && gksudo halt"
@@ -351,6 +353,12 @@ awful.rules.rules = {
                      placement = centered,
                      keys = clientkeys,
                      buttons = clientbuttons } },
+    -- Add the external WWW rules
+    rule_www_01,
+
+    -- Add the external Email rules
+    rule_email_01,
+
     -- Add the external Fiji rules
     rule_fiji_01,
     rule_fiji_02,
@@ -358,10 +366,6 @@ awful.rules.rules = {
     -- Add the external Pidgin rules
     rule_pidgin_01,
 
-    { rule = { class = "Google-chrome" },
-      properties = { tag = tags[ 1 ][ 1 ] } },
-    { rule = { class = "Thunderbird" },
-      properties = { tag = tags[ 1 ][ 2 ] } },
     { rule = { class = "Skype" },
       properties = { tag = tags[ 1 ][ 3 ] } },
     { rule = { class = "Gnome-terminal" },
