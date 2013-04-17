@@ -6,7 +6,7 @@ Usage
 -----
 1. Install awesome
    ```
-   sudo apt-get install awesome awesome-extra menu-l10n conky-all pidgin pidgin-plugin-pack pidgin-awayonlock thunderbird zenity
+   sudo apt-get install awesome awesome-extra menu-l10n conky-all zenity
    ```
 
 2. Clone the repository
