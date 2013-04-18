@@ -51,6 +51,7 @@ require( "inc.rules.pidgin" )
 require( "inc.rules.skype" )
 require( "inc.rules.eclipse" )
 require( "inc.rules.terminal" )
+require( "inc.wallpaper" )
 
 --
 myshutdown = "zenity --question --text \"Are you sure you want to halt?\" && gksudo halt"
