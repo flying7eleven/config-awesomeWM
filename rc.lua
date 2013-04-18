@@ -52,6 +52,7 @@ require( "inc.rules.skype" )
 require( "inc.rules.eclipse" )
 require( "inc.rules.terminal" )
 require( "inc.wallpaper" )
+require( "inc.screensaver" )
 
 --
 myshutdown = "zenity --question --text \"Are you sure you want to halt?\" && gksudo halt"
@@ -81,6 +82,7 @@ end
 -- I suggest you to remap Mod4 to another key using xmodmap or other tools.
 -- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod4"
+altkey = "Mod1"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 layouts =
@@ -265,6 +267,9 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
 
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
+
+    -- bind the key for locking the screen (TODO: move this to the screensaver.lua)
+    awful.key( { altkey, "Control" }, "l", function () awful.util.spawn_with_shell( "xscreensaver-command -lock" ) end),
 
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
