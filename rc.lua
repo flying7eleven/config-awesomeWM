@@ -1,9 +1,10 @@
 -- Standard awesome library
-require("awful")
-require("awful.autofocus")
-require("awful.rules")
-require("beautiful")
-require("naughty")
+awful = require("awful")
+awful.autofocus = require("awful.autofocus")
+awful.rules = require("awful.rules")
+beautiful = require("beautiful")
+naughty = require("naughty")
+wibox = require( "wibox" )
 
 -- Load Debian menu entries
 require("debian.menu")
