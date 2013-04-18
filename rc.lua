@@ -428,4 +428,5 @@ run_once( "thunderbird", nil, "/usr/lib/thunderbird/thunderbird" );
 run_once( "skype" );
 run_once( "pidgin" );
 run_once( "gnome-terminal" );
+run_once( "xcompmgr -cFr0 &" )
 -- }}}
