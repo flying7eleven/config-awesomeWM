@@ -54,6 +54,7 @@ require( "inc.rules.eclipse" )
 require( "inc.rules.terminal" )
 require( "inc.wallpaper" )
 require( "inc.screensaver" )
+require( "inc.widgets.keyboard" )
 
 --
 myshutdown = "zenity --question --text \"Are you sure you want to halt?\" && gksudo halt"
@@ -205,6 +206,7 @@ for s = 1, screen.count() do
             layout = awful.widget.layout.horizontal.leftright
         },
         mylayoutbox[s],
+        kbdcfg.widget,
         mytextclock,
         s == 1 and mysystray or nil,
         mytasklist[s],
