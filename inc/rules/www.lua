@@ -4,3 +4,8 @@ rule_www_01 = {
 	rule = { class = "Google-chrome" },
 	properties = { tag = tags[ 1 ][ 1 ] }
 }
+
+rule_www_02 = {
+	rule = { instance = "app.asana.com" },
+	properties = { tag = tags[ 1 ][ 7 ] }
+}

@@ -367,6 +367,7 @@ awful.rules.rules = {
                      buttons = clientbuttons } },
     -- Add the external WWW rules
     rule_www_01,
+    rule_www_02,
 
     -- Add the external Email rules
     rule_email_01,

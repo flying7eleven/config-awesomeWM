@@ -9,7 +9,7 @@ tags.workSettings = {
 	{ name = "4:pidgin",	layout = awful.layout.suit.tile.left,	wmfact = 0.85 },
 	{ name = "5:terminal",	layout = awful.layout.suit.tile.bottom,	wmfact = 0.5 },
 	{ name = "6:eclipse",	layout = awful.layout.suit.max,			wmfact = 1.0 },
-	{ name = "7:NA",		layout = awful.layout.suit.tile.left,	wmfact = 0.5 },
+	{ name = "7:asana",		layout = awful.layout.suit.max,			wmfact = 1.0 },
 	{ name = "8:NA",		layout = awful.layout.suit.tile.left,	wmfact = 0.5 },
 	{ name = "9:NA",		layout = awful.layout.suit.tile.left,	wmfact = 0.5 },
 }
