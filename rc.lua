@@ -429,6 +429,7 @@ run_once( "google-chrome", nil, "/opt/google/chrome/chrome" );
 run_once( "google-chrome", "-app=https://app.asana.com", "/opt/google/chrome/chrome" );
 run_once( "google-chrome", "-app=https://www.newsblur.com", "/opt/google/chrome/chrome" );
 run_once( "thunderbird", nil, "/usr/lib/thunderbird/thunderbird" );
+run_once( "eclipse" );
 run_once( "skype" );
 run_once( "pidgin" );
 run_once( "gnome-terminal" );
