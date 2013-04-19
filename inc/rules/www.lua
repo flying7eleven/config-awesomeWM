@@ -9,3 +9,8 @@ rule_www_02 = {
 	rule = { instance = "app.asana.com" },
 	properties = { tag = tags[ 1 ][ 7 ] }
 }
+
+rule_www_03 = {
+	rule = { instance = "www.newsblur.com" },
+	properties = { tag = tags[ 1 ][ 8 ] }
+}

@@ -368,6 +368,7 @@ awful.rules.rules = {
     -- Add the external WWW rules
     rule_www_01,
     rule_www_02,
+    rule_www_03,
 
     -- Add the external Email rules
     rule_email_01,
