@@ -43,6 +43,9 @@ terminal = "x-terminal-emulator"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
+-- get the hostname of the executing computer
+wmHostname = io.popen( "uname -n" ):read()
+
 -- Include our external scripts
 require( "inc.tags" )
 require( "inc.rules.www" )
@@ -373,7 +376,7 @@ awful.rules.rules = {
     rule_eclipse_01,
 
     -- Add the external rules for the terminal
-    rule_terminal_01
+    rule_terminal_01.currentlyActive
 }
 -- }}}
 
