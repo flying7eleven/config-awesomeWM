@@ -27,6 +27,7 @@ run_once( "thunderbird", nil, "/usr/lib/thunderbird/thunderbird" );
 -- based on the host name, start the desired applications
 if hostname == "zockepeter" then
 	run_once( "gnome-terminal" );
+	run_once( "steam" );
 else
 	run_once( "google-chrome", "-app=https://app.asana.com", "/opt/google/chrome/chrome" );
 	run_once( "google-chrome", "-app=https://www.newsblur.com", "/opt/google/chrome/chrome" );
