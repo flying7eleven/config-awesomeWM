@@ -9,7 +9,7 @@ rule_terminal_01.private = {
 
 rule_terminal_01.work = {
 	rule = { class = "Gnome-terminal" },
-	properties = { tag = tags[ 1 ][ 5 ] }
+	properties = { tag = tags[ 1 ][ 6 ] }
 }
 
 if wmHostname == "zockepeter" then

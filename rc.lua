@@ -68,6 +68,19 @@ function myrestart()
 	awesome.restart()
 end
 
+function myquit()
+	processedPids = {}
+	for i, c in pairs( client.get() ) do
+		if not processedPids[ c.pid ] then
+			naughty.notify( { preset = naughty.config.presets.critical, title = "Window title", text = tostring( c.role ) } )
+			table.insert( processedPids, c.pid )
+		end
+--		awful.util.spawn_with_shell( "kill -s SIGTERM " .. tostring( c.pid ) )
+	end
+	
+	-- awesome.quit()
+end
+
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
 -- If you do not like this or do not have such a key,
@@ -100,7 +113,7 @@ myawesomemenu = {
 --   { "manual", terminal .. " -e man awesome" },
 --   { "edit config", editor_cmd .. " " .. awesome.conffile },
    { "restart wm", myrestart },
-   { "logout", awesome.quit },
+   { "logout", myquit },
    { "shutdown", shutdown }
 }
 
@@ -359,6 +372,7 @@ awful.rules.rules = {
     rule_www_01,
     rule_www_02,
     rule_www_03,
+    rule_www_04,
 
     -- Add the external Email rules
     rule_email_01,

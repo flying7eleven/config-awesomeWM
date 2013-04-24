@@ -2,5 +2,5 @@
 -- Some ideas copied from https://github.com/JoeD84/awesome
 rule_skype_01 = {
 	rule = { class = "Skype" },
-	properties = { tag = tags[ 1 ][ 3 ] }
+	properties = { tag = tags[ 1 ][ 4 ] }
 }
