@@ -31,6 +31,7 @@ if hostname == "zockepeter" then
 else
 	run_once( "google-chrome", "-app=https://app.asana.com", "/opt/google/chrome/chrome" );
 	run_once( "google-chrome", "-app=https://www.newsblur.com", "/opt/google/chrome/chrome" );
+	run_once( "google-chrome", "-app=https://calendar.google.com", "/opt/google/chrome/chrome" );
 	run_once( "eclipse" );
 	run_once( "skype" );
 	run_once( "pidgin" );
