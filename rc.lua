@@ -69,16 +69,15 @@ function myrestart()
 end
 
 function myquit()
-	processedPids = {}
-	for i, c in pairs( client.get() ) do
-		if not processedPids[ c.pid ] then
-			naughty.notify( { preset = naughty.config.presets.critical, title = "Window title", text = tostring( c.role ) } )
-			table.insert( processedPids, c.pid )
-		end
+--	processedPids = {}
+--	for i, c in pairs( client.get() ) do
+--		if not processedPids[ c.pid ] then
+--			naughty.notify( { preset = naughty.config.presets.critical, title = "Window title", text = tostring( c.role ) } )
+--			table.insert( processedPids, c.pid )
+--		end
 --		awful.util.spawn_with_shell( "kill -s SIGTERM " .. tostring( c.pid ) )
-	end
-	
-	-- awesome.quit()
+--	end
+	awesome.quit()
 end
 
 -- Default modkey.
