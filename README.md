@@ -2,11 +2,11 @@ AwesomeWM Configuration
 =======================
 TODO
 
-Usage
------
+Usage (on ArchLinux)
+--------------------
 1. Install awesomewm and some other required applications
    ```
-   sudo apt-get install awesome awesome-extra menu-l10n conky-all xcompmgr xscreensaver xscreensaver-data-extra xscreensaver-gl-extra zenity
+   sudo pacman -S awesome xcompmgr xscreensaver pcmanfm
    ```
 
 2. Clone the repository to the right directory
