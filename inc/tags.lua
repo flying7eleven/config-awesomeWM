@@ -40,12 +40,17 @@ end
 -- set the actually used tags
 for s = 1, 1 do
 	tags[ s ] = {}
+	tmpTags = {}
+	tmpLayouts = {}
+	tmpFacts = {}
 	for i, v in ipairs( tags.usedTags ) do
-		tags[ s ][ i ] = tag( { name = v.name } )
-		tags[ s ][ i ].screen = s
-		awful.tag.setproperty( tags[ s ][ i ], "layout", v.layout )
-		awful.tag.setmwfact( v.wmfact, tags[ s ][ i ] )
+		table.insert( tmpTags, v.name )
+		table.insert( tmpLayouts, v.layout )
+		table.insert( tmpFacts, v.wmfact )
 	end
-	tags[ s ][ 1 ].selected = true
+	tags[ s ] = awful.tag( tmpTags, s, tmpLayouts )
+	--for i, t in ipairs( tags[ s ] ) do
+	--	awful.tag.setwmfact( tmpFacts[ i ].wmfact, t ) 
+	--end
 end
 -- }}}
