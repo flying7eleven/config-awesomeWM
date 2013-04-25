@@ -1,15 +1,15 @@
 -- Standard awesome library
-local gears = require("gears")
-local awful = require("awful")
+gears = require("gears")
+awful = require("awful")
 awful.rules = require("awful.rules")
 require("awful.autofocus")
 -- Widget and layout library
-local wibox = require("wibox")
+wibox = require("wibox")
 -- Theme handling library
-local beautiful = require("beautiful")
+beautiful = require("beautiful")
 -- Notification library
-local naughty = require("naughty")
-local menubar = require("menubar")
+naughty = require("naughty")
+menubar = require("menubar")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -56,36 +56,30 @@ modkey = "Mod4"
 local layouts =
 {
     awful.layout.suit.floating,
-    awful.layout.suit.tile,
+--    awful.layout.suit.tile,
     awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
+--    awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
     awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
+--    awful.layout.suit.fair.horizontal,
+--    awful.layout.suit.spiral,
+--    awful.layout.suit.spiral.dwindle,
     awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier
+--    awful.layout.suit.max.fullscreen,
+--    awful.layout.suit.magnifier
 }
 -- }}}
 
--- {{{ Wallpaper
-if beautiful.wallpaper then
-    for s = 1, screen.count() do
-        gears.wallpaper.maximized(beautiful.wallpaper, s, true)
-    end
-end
--- }}}
-
--- {{{ Tags
--- Define a tag table which hold all screen tags.
-tags = {}
-for s = 1, screen.count() do
-    -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
-end
--- }}}
+require( "inc.tags" )
+require( "inc.rules.www" )
+require( "inc.rules.email" )
+require( "inc.rules.pidgin" )
+require( "inc.rules.skype" )
+require( "inc.rules.steam" )
+require( "inc.rules.terminal" )
+require( "inc.rules.eclipse" )
+require( "inc.rules.fiji" )
+require( "inc.wallpaper" )
 
 -- {{{ Menu
 -- Create a laucher widget and a main menu
@@ -347,15 +341,18 @@ awful.rules.rules = {
                      focus = awful.client.focus.filter,
                      keys = clientkeys,
                      buttons = clientbuttons } },
-    { rule = { class = "MPlayer" },
-      properties = { floating = true } },
-    { rule = { class = "pinentry" },
-      properties = { floating = true } },
-    { rule = { class = "gimp" },
-      properties = { floating = true } },
-    -- Set Firefox to always map on tags number 2 of screen 1.
-    -- { rule = { class = "Firefox" },
-    --   properties = { tag = tags[1][2] } },
+      rule_www_01,
+      rule_www_02,
+      rule_www_03,
+      rule_www_04,
+      rule_email_01,
+      rule_pidgin_01,
+      rule_skype_01,
+      rule_eclipse_01,
+      rule_fiji_01,
+      rule_fiji_02,
+      rule_steam_01,
+      rule_terminal_01.currentlyActive
 }
 -- }}}
 
