@@ -4,7 +4,7 @@ kbdcfg = {}
 kbdcfg.cmd = "setxkbmap"
 kbdcfg.layout = { "us", "de" }
 kbdcfg.current = 1  -- us is our default layout
-kbdcfg.widget = widget({ type = "textbox", align = "right" })
+kbdcfg.widget = wibox.widget.textbox()
 kbdcfg.widget.text = " " .. kbdcfg.layout[kbdcfg.current] .. " "
 kbdcfg.switch = function ()
 	kbdcfg.current = kbdcfg.current % #(kbdcfg.layout) + 1

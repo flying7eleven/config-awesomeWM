@@ -80,7 +80,7 @@ require( "inc.rules.terminal" )
 require( "inc.rules.eclipse" )
 require( "inc.rules.fiji" )
 require( "inc.wallpaper" )
-
+require( "inc.widgets.keyboard" )
 -- {{{ Menu
 -- Create a laucher widget and a main menu
 myawesomemenu = {
@@ -184,6 +184,7 @@ for s = 1, screen.count() do
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
     right_layout:add(mytextclock)
+    right_layout:add(kbdcfg.widget)
     right_layout:add(mylayoutbox[s])
 
     -- Now bring it all together (with the tasklist in the middle)
