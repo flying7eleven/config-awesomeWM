@@ -20,7 +20,6 @@ end
 
 -- start the applications which should always start
 -- awful.util.spawn( "conky -c ~/.config/awesome/configs/conky.conf" );
-run_once( "xcompmgr -cFr0 &" )
 run_once( "google-chrome", nil, "/opt/google/chrome/chrome" );
 run_once( "thunderbird", nil, "/usr/lib/thunderbird/thunderbird" );
 

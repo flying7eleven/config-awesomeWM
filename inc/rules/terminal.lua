@@ -3,12 +3,12 @@
 rule_terminal_01 = {}
 
 rule_terminal_01.private = {
-	rule = { class = "Gnome-terminal" },
+	rule = { class = "Terminator" },
 	properties = { tag = tags[ 1 ][ 3 ] }
 }
 
 rule_terminal_01.work = {
-	rule = { class = "Gnome-terminal" },
+	rule = { class = "Terminator" },
 	properties = { tag = tags[ 1 ][ 6 ] }
 }
 
