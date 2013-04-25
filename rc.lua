@@ -344,18 +344,18 @@ awful.rules.rules = {
                      focus = awful.client.focus.filter,
                      keys = clientkeys,
                      buttons = clientbuttons } },
+      rule_email_01,
+      rule_terminal_01,
       rule_www_01,
       rule_www_02,
       rule_www_03,
       rule_www_04,
-      rule_email_01,
       rule_pidgin_01,
       rule_skype_01,
       rule_eclipse_01,
       rule_fiji_01,
       rule_fiji_02,
-      rule_steam_01,
-      rule_terminal_01.currentlyActive
+      rule_steam_01
 }
 -- }}}
 
