@@ -352,7 +352,8 @@ awful.rules.rules = {
       rule_www_04,
       rule_pidgin_01,
       rule_skype_01,
-      rule_eclipse_01,
+      rule_development_01,
+      rule_development_02,
       rule_fiji_01,
       rule_fiji_02,
       rule_steam_01
