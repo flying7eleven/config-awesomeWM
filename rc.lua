@@ -82,7 +82,7 @@ require( "inc.rules.eclipse" )
 require( "inc.rules.fiji" )
 require( "inc.wallpaper" )
 require( "inc.widgets.keyboard" )
-require( "inc.startup" )
+-- require( "inc.startup" )
 
 -- {{{ Menu
 -- Create a laucher widget and a main menu
