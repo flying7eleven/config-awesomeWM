@@ -20,18 +20,14 @@ end
 
 -- start the applications which should always start
 -- awful.util.spawn( "conky -c ~/.config/awesome/configs/conky.conf" );
-
--- start the applications for work
-if not hostname == "zockepeter" then
-	run_once( "chromium", nil, "/usr/lib/chromium/chromium" );
-	run_once( "chromium", "--app=https://calendar.google.com", "/usr/lib/chromium/chromium" );
-	run_once( "chromium", "--app=https://app.asana.com", "/usr/lib/chromium/chromium" );
-	run_once( "chromium", "--app=https://www.newsblur.com", "/usr/lib/chromium/chromium" );
-	run_once( "thunderbird" );
-	run_once( "terminator", nil, "/usr/bin/python2 /usr/bin/terminator" );
-	run_once( "skype", nil, "/usr/lib32/skype/skype" );
-	run_once( "pidgin" );
-	run_once( "eclipse", nil, "/bin/bash /usr/bin/eclipse" );
+run_once( "chromium", nil, "/usr/lib/chromium/chromium" );
+run_once( "chromium", "--app=https://calendar.google.com", "/usr/lib/chromium/chromium" );
+run_once( "chromium", "--app=https://app.asana.com", "/usr/lib/chromium/chromium" );
+run_once( "chromium", "--app=https://www.newsblur.com", "/usr/lib/chromium/chromium" );
+run_once( "thunderbird" );
+run_once( "terminator", nil, "/usr/bin/python2 /usr/bin/terminator" );
+run_once( "skype", nil, "/usr/lib32/skype/skype" );
+run_once( "pidgin" );
+run_once( "eclipse", nil, "/bin/bash /usr/bin/eclipse" );
 --	run_once( "steam", nil, "bash /usr/bin/steam" );
-end
 -- }}}
