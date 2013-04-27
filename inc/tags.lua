@@ -3,7 +3,8 @@
 -- {{{ Tags
 
 -- Prepare the tags for the different scenarios
-tags = {
+tags = {}
+myTags = {
 	{ name = "1:www",		layout = awful.layout.suit.max,			wmfact = 1.0 },
 	{ name = "2:email",		layout = awful.layout.suit.max,			wmfact = 1.0 },
 	{ name = "3:calendar",	layout = awful.layout.suit.max,			wmfact = 1.0 },
@@ -22,7 +23,7 @@ for s = 1, 1 do
 	tmpTags = {}
 	tmpLayouts = {}
 	tmpFacts = {}
-	for i, v in ipairs( tags ) do
+	for i, v in ipairs( myTags ) do
 		table.insert( tmpTags, v.name )
 		table.insert( tmpLayouts, v.layout )
 		table.insert( tmpFacts, v.wmfact )
