@@ -19,7 +19,7 @@ Usage (on ArchLinux)
 
 3. for Search the GTK+ themes you want to use and install them from AUR:
    ```
-   yaourt -S clearlooks-phenix-gtk-theme-git
+   yaourt -S clearlooks-phenix-gtk-theme-git delorean-dark-theme-3.6
    ```
 
 4. Clone the repository to the right directory and update the submodules
@@ -36,5 +36,9 @@ Usage (on ArchLinux)
    xscreensaver-demo
    ```
 
-6. Restart awesomewm
+6. Start awesomewm
 
+7. Select the desired theme:
+   ```
+   lxappearance
+   ```
