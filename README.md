@@ -14,13 +14,12 @@ Usage (on ArchLinux)
 2. Install awesomewm and some other required applications
    ```
    sudo pacman -Sy
-   sudo pacman -S awesome xcompmgr xscreensaver pcmanfm gtk-theme-switch2 gtk-engines yaourt
+   sudo pacman -S awesome xcompmgr xscreensaver pcmanfm gtk-engines lxappearance yaourt
    ```
 
 3. for Search the GTK+ themes you want to use and install them from AUR:
    ```
-   yaourt -Ss gtk2-theme-
-   yaourt -S <selected themes>
+   yaourt -S clearlooks-phenix-gtk-theme-git
    ```
 
 4. Clone the repository to the right directory and update the submodules
