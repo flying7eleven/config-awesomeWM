@@ -17,9 +17,9 @@ Usage (on ArchLinux)
    sudo pacman -S awesome xcompmgr xscreensaver pcmanfm gtk-engines lxappearance yaourt
    ```
 
-3. for Search the GTK+ themes you want to use and install them from AUR:
+3. for Search the GTK+ themes (and fonts) you want to use and install them from AUR:
    ```
-   yaourt -S clearlooks-phenix-gtk-theme-git delorean-dark-theme-3.6
+   yaourt -S clearlooks-phenix-gtk-theme-git delorean-dark-theme-3.6 ttf-source-code-pro
    ```
 
 4. Clone the repository to the right directory and update the submodules
