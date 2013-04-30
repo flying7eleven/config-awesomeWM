@@ -9,3 +9,9 @@ rule_development_02 = {
 	rule = { class = "Spyder" },
 	properties = { tag = tags[ 1 ][ 7 ] }
 }
+
+rule_development_03 = {
+	rule = { class = "MeVisLab" },
+	properties = { tag = tags[ 1 ][ 7 ] },
+	callback = awful.titlebar.add
+}
