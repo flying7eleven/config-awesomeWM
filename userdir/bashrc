@@ -1,0 +1,36 @@
+#
+function git_branch { 
+	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\/\1/';
+}
+
+#
+function git_status {
+	git diff --quiet HEAD &>/dev/null
+	[[ $? == 1 ]] && tput setaf 1 || tput setaf 5
+}
+
+# set the default editor which should be used
+export EDITOR="vim"
+
+# export the required variables for using elastix
+export PATH="/opt/elastix/bin:$PATH"
+export LD_LIBRARY_PATH="/opt/elastix/lib:$PATH"
+
+# export the require variables for using MeVisLab
+export PATH="/opt/mevislab/bin:$PATH"
+
+# export the required variables for using Fiji
+export PATH="/home/thuetz/Applications/Fiji.app:$PATH"
+
+# set the required aliases which I need
+alias ll="clear && ls -l --color=auto"
+alias la="clear && ls -la --color=auto"
+alias pac="yaourt"
+alias gits="clear && git status"
+
+# return value visualisation
+PS1="\[\033[01;37m\]\$? \$(if [[ \$? == 0 ]]; then echo \"\[\033[01;32m\]\342\234\223\"; else echo \"\[\033[01;31m\]\342\234\227\"; fi) $(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\[\033[01;32m\]\u@\h'; fi)\[\033[01;34m\] \w$(git_branch) \$\[\033[00m\] "
+#PS1="\W\$(git_branch)\[\$(git_status)\] ⚡ \$(tput sgr 0)";
+
+# source some other required scripts
+source /usr/share/git/completion/git-completion.bash
