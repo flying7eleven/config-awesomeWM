@@ -4,18 +4,3 @@ rule_www_01 = {
 	rule = { class = "Chromium" },
 	properties = { tag = tags[ 1 ][ 1 ] }
 }
-
-rule_www_02 = {
-	rule = { instance = "app.asana.com" },
-	properties = { tag = tags[ 1 ][ 8 ] }
-}
-
-rule_www_03 = {
-	rule = { instance = "www.newsblur.com" },
-	properties = { tag = tags[ 1 ][ 9 ] }
-}
-
-rule_www_04 = {
-	rule = { instance = "calendar.google.com" },
-	properties = { tag = tags[ 1 ][ 3 ] }
-}

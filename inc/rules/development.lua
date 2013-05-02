@@ -2,16 +2,16 @@
 -- Some ideas copied from https://github.com/JoeD84/awesome
 rule_development_01 = {
 	rule = { class = "Eclipse" },
-	properties = { tag = tags[ 1 ][ 7 ] }
+	properties = { tag = tags[ 1 ][ 6 ] }
 }
 
 rule_development_02 = {
 	rule = { class = "Spyder" },
-	properties = { tag = tags[ 1 ][ 7 ] }
+	properties = { tag = tags[ 1 ][ 6 ] }
 }
 
 rule_development_03 = {
 	rule = { class = "MeVisLab" },
-	properties = { tag = tags[ 1 ][ 7 ] },
+	properties = { tag = tags[ 1 ][ 6 ] },
 	callback = awful.titlebar.add
 }

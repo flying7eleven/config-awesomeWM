@@ -77,7 +77,7 @@ require( "inc.rules.email" )
 require( "inc.rules.im" )
 require( "inc.rules.steam" )
 require( "inc.rules.terminal" )
-require( "inc.rules.eclipse" )
+require( "inc.rules.development" )
 require( "inc.rules.fiji" )
 require( "inc.wallpaper" )
 require( "inc.widgets.keyboard" )
@@ -347,9 +347,6 @@ awful.rules.rules = {
       rule_email_01,
       rule_terminal_01,
       rule_www_01,
-      rule_www_02,
-      rule_www_03,
-      rule_www_04,
       rule_im_01,
       rule_im_02,
       rule_development_01,
