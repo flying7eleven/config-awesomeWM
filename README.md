@@ -30,15 +30,21 @@ Usage (on ArchLinux)
    git submodule init
    git submodule update
    ```
-5. Configure the screensaver
+
+5. Install the provided user scripts:
+   ```
+   python2 installUserDir.py
+   ```
+
+6. Configure the screensaver
    You have to configure the screensaver to ensure that it locks the screen after a specific amount of minutes. You can do this by calling
    ```
    xscreensaver-demo
    ```
 
-6. Start awesomewm
+7. Start awesomewm
 
-7. Select the desired theme:
+8. Select the desired theme:
    ```
    lxappearance
    ```
