@@ -74,8 +74,7 @@ local layouts =
 require( "inc.tags" )
 require( "inc.rules.www" )
 require( "inc.rules.email" )
-require( "inc.rules.pidgin" )
-require( "inc.rules.skype" )
+require( "inc.rules.im" )
 require( "inc.rules.steam" )
 require( "inc.rules.terminal" )
 require( "inc.rules.eclipse" )
@@ -351,8 +350,8 @@ awful.rules.rules = {
       rule_www_02,
       rule_www_03,
       rule_www_04,
-      rule_pidgin_01,
-      rule_skype_01,
+      rule_im_01,
+      rule_im_02,
       rule_development_01,
       rule_development_02,
       rule_development_03,
