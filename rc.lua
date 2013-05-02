@@ -352,6 +352,7 @@ awful.rules.rules = {
       rule_development_01,
       rule_development_02,
       rule_development_03,
+      rule_development_04,
       rule_fiji_01,
       rule_fiji_02,
       rule_steam_01

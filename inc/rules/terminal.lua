@@ -2,6 +2,6 @@
 -- Some ideas copied from https://github.com/JoeD84/awesome
 rule_terminal_01 = {
 	rule = { class = "Terminator" },
-	properties = { tag = tags[ 1 ][ 5 ] },
+	properties = { tag = tags[ 1 ][ 4 ] },
 	opacity = 0.8
 }
