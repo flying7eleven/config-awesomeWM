@@ -8,13 +8,12 @@ myTags = {
 	{ name = "1:www",		layout = awful.layout.suit.max,			wmfact = 1.0 },
 	{ name = "2:email",		layout = awful.layout.suit.max,			wmfact = 1.0 },
 	{ name = "3:calendar",	layout = awful.layout.suit.max,			wmfact = 1.0 },
-	{ name = "4:skype",		layout = awful.layout.suit.tile.left,	wmfact = 0.9 },
-	{ name = "5:pidgin",	layout = awful.layout.suit.tile.left,	wmfact = 0.85 },
-	{ name = "6:terminal",	layout = awful.layout.suit.tile.bottom,	wmfact = 0.5 },
-	{ name = "7:devel",		layout = awful.layout.suit.max,			wmfact = 1.0 },
-	{ name = "8:asana",		layout = awful.layout.suit.max,			wmfact = 1.0 },
-	{ name = "9:news",		layout = awful.layout.suit.max,			wmfact = 1.0 },
-	{ name = "NA",			layout = awful.layout.suit.tile.left,	wmfact = 0.5 },
+	{ name = "4:im",		layout = awful.layout.suit.tile.left,	wmfact = 0.5 },
+	{ name = "5:terminal",	layout = awful.layout.suit.tile.bottom,	wmfact = 0.5 },
+	{ name = "6:devel",		layout = awful.layout.suit.max,			wmfact = 1.0 },
+	{ name = "7:asana",		layout = awful.layout.suit.max,			wmfact = 1.0 },
+	{ name = "8:news",		layout = awful.layout.suit.max,			wmfact = 1.0 },
+	{ name = "9:NA",		layout = awful.layout.suit.tile.left,	wmfact = 0.5 },
 }
 
 -- set the actually used tags
