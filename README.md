@@ -14,7 +14,7 @@ Usage (on ArchLinux)
 2. Install awesomewm and some other required applications
    ```
    sudo pacman -Sy
-   sudo pacman -S awesome xlock pcmanfm gtk-engines lxappearance yaourt
+   sudo pacman -S awesome xlock pcmanfm gtk-engines lxappearance yaourt numlockx
    ```
 
 3. for Search the GTK+ themes (and fonts) you want to use and install them from AUR:
