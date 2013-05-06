@@ -23,8 +23,5 @@ dropboxd &
 # enable the numlock while logging in
 numlockx &
 
-# start the screensaver daemon
-xscreensaver -no-splash &
-
 # start the window manager
 exec awesome >> ~/.cache/awesome/stdout 2>> ~/.cache/awesome/stderr
