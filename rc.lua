@@ -317,6 +317,7 @@ for i = 1, 9 do
                           awful.client.movetotag(tag)
                      end
                   end),
+        awful.key({ modkey, "Shift"	  }, "l",      function () awful.util.spawn( "xlock -mode pacman" ) end),
         awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
                   function ()
                       local tag = awful.tag.gettags(client.focus.screen)[i]
