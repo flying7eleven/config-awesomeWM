@@ -27,4 +27,4 @@ numlockx &
 xscreensaver -no-splash &
 
 # start the window manager
-exec awesome
+exec awesome >> ~/.cache/awesome/stdout 2>> ~/.cache/awesome/stderr
