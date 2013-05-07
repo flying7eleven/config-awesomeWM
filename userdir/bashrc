@@ -112,6 +112,7 @@ alias ll="clear && ls -l --color=auto"
 alias la="clear && ls -la --color=auto"
 alias pac="yaourt"
 alias gits="clear && git status"
+alias open="xdg-open"
 
 # return value visualisation
 PS1=$IBlack$Time12h$Color_Off'$(git branch &>/dev/null;\
