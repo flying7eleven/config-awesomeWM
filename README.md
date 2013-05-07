@@ -36,10 +36,11 @@ Usage (on ArchLinux)
    python2 installUserDir.py
    ```
 
-6. Configure the screensaver
-   You have to configure the screensaver to ensure that it locks the screen after a specific amount of minutes. You can do this by calling
+6. Configure the default applications
+   Set some of the default applications of your computer
    ```
-   xscreensaver-demo
+   xdg-mime default chromium.desktop x-scheme-handler/http
+   xdg-mime default chromium.desktop x-scheme-handler/https
    ```
 
 7. Start awesomewm
