@@ -47,9 +47,16 @@ Usage (on ArchLinux)
    xdg-mime default thunderbird.desktop message/rfc822 
    ```
 
-7. Start awesomewm
+7. Ensure that the correct git confuration is used
+   ```
+   git config --global include.path ~/.config/awesome/userdir/gitconfig
+   git config --global user.name "Your Name"
+   git config --global user.email your@address.com
+   ```
 
-8. Select the desired theme:
+8. Start awesomewm
+
+9. Select the desired theme:
    ```
    lxappearance
    ```
