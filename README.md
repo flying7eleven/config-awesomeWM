@@ -41,6 +41,10 @@ Usage (on ArchLinux)
    ```
    xdg-mime default chromium.desktop x-scheme-handler/http
    xdg-mime default chromium.desktop x-scheme-handler/https
+   xdg-mime default pcmanfm.desktop inode/directory
+   xdg-mime default pcmanfm.desktop inode/directory
+   xdg-mime default thunderbird.desktop x-scheme-handler/mailto
+   xdg-mime default thunderbird.desktop message/rfc822 
    ```
 
 7. Start awesomewm
