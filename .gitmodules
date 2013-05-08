@@ -3,4 +3,4 @@
 	url = https://github.com/dimaursu16/awesome-themes.git
 [submodule "awmodoro"]
 	path = awmodoro
-	url = git://github.com/optama/awmodoro.git
+	url = git://github.com/thuetz/awmodoro.git
