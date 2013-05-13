@@ -10,6 +10,8 @@ beautiful = require("beautiful")
 -- Notification library
 naughty = require("naughty")
 menubar = require("menubar")
+--
+awmodoro = require("awmodoro")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
