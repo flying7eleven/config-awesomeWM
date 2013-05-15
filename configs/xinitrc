@@ -1,0 +1,27 @@
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+  for f in /etc/X11/xinit/xinitrc.d/*; do
+    [ -x "$f" ] && . "$f"
+  done
+  unset f
+fi
+
+# ensure that we have a composing manager running
+compton --config ~/.config/awesome/userdir/compton -b
+
+# ensure that our synergy server is running
+synergys
+
+# start the dropbox deamon
+dropboxd &
+
+# enable the numlock while logging in
+numlockx &
+
+# start the window manager
+exec awesome >> ~/.cache/awesome/stdout 2>> ~/.cache/awesome/stderr
