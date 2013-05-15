@@ -1,6 +1,9 @@
 [submodule "themes"]
 	path = themes
-	url = https://github.com/dimaursu16/awesome-themes.git
+	url = git@github.com:dimaursu16/awesome-themes.git
 [submodule "awmodoro"]
 	path = awmodoro
 	url = git@github.com:thuetz/awmodoro.git
+[submodule "userdir"]
+	path = userdir
+	url = git@github.com:thuetz/userdir-configs.git
