@@ -4,3 +4,6 @@
 [submodule "awmodoro"]
 	path = awmodoro
 	url = git@github.com:thuetz/awmodoro.git
+[submodule "userdir"]
+	path = userdir
+	url = git@github.com:thuetz/userdir-configs.git
