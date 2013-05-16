@@ -8,3 +8,10 @@ rule_im_02 = {
 	rule = { class = "Pidgin" },
 	properties = { tag = tags[ 1 ][ 3 ] }
 }
+rule_im_03 = { 
+	rule = { name = "Hangouts" },
+	properties = { floating = true, focus = true },
+	callback = function( c )
+					c:geometry( { width = 300 , height = 300 } )
+			   end
+}
