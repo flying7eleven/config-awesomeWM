@@ -1,0 +1,6 @@
+alias ll="clear && ls -l --color=auto"
+alias la="clear && ls -la --color=auto"
+alias pac="yaourt"
+alias gits="clear && git status"
+alias tigger="tig --all"
+alias open="xdg-open"

@@ -108,14 +108,6 @@ export PATH="/opt/mevislab/bin:$PATH"
 # export the required variables for using Fiji
 export PATH="/home/thuetz/Applications/Fiji.app:$PATH"
 
-# set the required aliases which I need
-alias ll="clear && ls -l --color=auto"
-alias la="clear && ls -la --color=auto"
-alias pac="yaourt"
-alias gits="clear && git status"
-alias tigger="tig --all"
-alias open="xdg-open"
-
 # return value visualisation
 PS1=$IBlack$Time24h$Color_Off'$(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
@@ -133,5 +125,6 @@ else \
 fi)'
 
 # source some other required scripts
+source ~/.bash_aliases
 source /usr/share/git/completion/git-completion.bash
 source /usr/share/git/completion/git-prompt.sh
