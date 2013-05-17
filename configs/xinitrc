@@ -20,6 +20,9 @@ synergys
 # start the dropbox deamon
 dropboxd &
 
+# start the ownCloud client
+owncloud &
+
 # enable the numlock while logging in
 numlockx &
 
