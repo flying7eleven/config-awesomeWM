@@ -21,7 +21,7 @@ synergys
 dropboxd &
 
 # start the ownCloud client
-owncloud &
+# owncloud & # TODO: 2013-05-21 the current version needs too much RAM
 
 # enable the numlock while logging in
 numlockx &
