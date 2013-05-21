@@ -110,6 +110,37 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- Create a textclock widget
 mytextclock = awful.widget.textclock()
 
+pomowibox = awful.wibox({ position = "top", screen = 1, height=10})
+pomowibox.visible = false
+
+pomodoro = awmodoro.new({
+    minutes             = 1, 
+    do_notify           = true,
+    gradient_colors     = { '#9CEF6C', '#FFE473', '#FF7D73' },
+--  color               = '#AECF96', -- gradient_colors has precedence
+    width               = pomowibox.width,
+    height              = pomowibox.height,
+
+    begin_callback = function()
+        for s = 1, screen.count() do
+            -- change below if necessary
+            mywibox[s].visible = false
+        end
+        pomowibox.visible = true
+    end,
+
+    finish_callback = function()
+        for s = 1, screen.count() do
+            -- change below if necessary
+            mywibox[s].visible = true
+        end
+        pomowibox.visible = false
+    end})
+
+pomowibox.widgets = {
+    pomodoro.widget,
+}
+
 -- Create a wibox for each screen and add it
 mywibox = {}
 mypromptbox = {}
@@ -268,7 +299,11 @@ globalkeys = awful.util.table.join(
                   awful.util.getdir("cache") .. "/history_eval")
               end),
     -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end)
+    --awful.key({ modkey }, "p", function() menubar.show() end)
+
+    -- Awmodoro
+    awful.key({ modkey            }, "p", pomodoro.toggle),
+    awful.key({ modkey, "Shift"   }, "p", pomodoro.finish)
 )
 
 clientkeys = awful.util.table.join(
@@ -319,7 +354,7 @@ for i = 1, 9 do
                           awful.client.movetotag(tag)
                      end
                   end),
-        awful.key({ modkey	  }, "l",      function () awful.util.spawn( "xlock -mode pacman" ) end),
+        awful.key({ modkey, "Shift"	  }, "l",      function () awful.util.spawn( "xlock -mode pacman" ) end),
         awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
                   function ()
                       local tag = awful.tag.gettags(client.focus.screen)[i]
@@ -352,6 +387,7 @@ awful.rules.rules = {
       rule_www_01,
       rule_im_01,
       rule_im_02,
+      rule_im_03,
       rule_development_01,
       rule_development_02,
       rule_development_03,
