@@ -22,6 +22,11 @@ function git_status {
 	[[ $? == 1 ]] && tput setaf 1 || tput setaf 5
 }
 
+# if we're on a Mac, be sure that we get english command line output
+if [ "$(uname -s)" == "Darwin" ]; then
+	export LC_MESSAGES="en_US.UTF-8"
+fi
+
 # set the default editor which should be used
 export EDITOR="vim"
 
