@@ -3,8 +3,13 @@
 # source some other required scripts
 source ~/.bash_aliases
 source ~/.bash_colors
-source /usr/share/git/completion/git-completion.bash
-source /usr/share/git/completion/git-prompt.sh
+if [ "$(uname -s)" == "Darwin" ]; then
+	source /opt/local/etc/profile.d/bash_completion.sh
+	source /opt/local/share/git-core/git-prompt.sh
+else
+	source /usr/share/git/completion/git-completion.bash
+	source /usr/share/git/completion/git-prompt.sh
+fi
 
 #
 function git_branch { 
