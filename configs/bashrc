@@ -25,6 +25,10 @@ function git_status {
 # set the default editor which should be used
 export EDITOR="vim"
 
+# set the default paths for using the MacPorts applications
+export PATH="/opt/local/bin:$PATH"
+export LD_LIBRARY_PATH="/opt/local/lib:$LD_LIBRARY_PATH"
+
 # export the required variables for using elastix
 export PATH="/opt/elastix/bin:$PATH"
 export LD_LIBRARY_PATH="/opt/elastix/lib:$PATH"
