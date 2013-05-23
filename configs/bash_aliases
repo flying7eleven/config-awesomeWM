@@ -5,3 +5,12 @@ alias gits="clear && git status"
 alias tigger="tig --all"
 alias open="xdg-open"
 alias grep="grep -i --color=auto"
+
+# if we're running on MacOS, change some unsupported aliases
+if [ "$(uname -s)" == "Darwin" ]; then
+	alias ll="clear && ls -l"
+	alias la="clear && ls -la"
+	unalias open
+	unalias tigger
+	unalias pac
+fi
