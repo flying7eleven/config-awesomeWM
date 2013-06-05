@@ -1,5 +1,6 @@
 -- vi: set tw=1000 ts=4 autoindent smartindent cindent:
 -- Script provided by https://wiki.archlinux.org/index.php/Awesome
+local gears = require("gears")
 
 -- configuration - edit to your liking
 wp_index = 1
