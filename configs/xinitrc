@@ -12,7 +12,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 # ensure that we have a composing manager running
-compton --config ~/.config/awesome/userdir/compton -b
+# compton --config ~/.config/awesome/userdir/compton -b
 
 # ensure that our synergy server is running
 synergys
@@ -22,6 +22,9 @@ dropboxd &
 
 # start the ownCloud client
 # owncloud & # TODO: 2013-05-21 the current version needs too much RAM
+
+# start the SparkleShare client
+sparkleshare start &
 
 # enable the numlock while logging in
 numlockx &
