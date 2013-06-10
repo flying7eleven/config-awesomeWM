@@ -6,6 +6,7 @@ alias tigger="tig --all"
 alias open="xdg-open"
 alias grep="grep -i --color=auto"
 alias nb="ipython2 notebook --pylab=inline"
+alias dev="terminator -l programming"
 
 # if we're running on MacOS, change some unsupported aliases
 if [ "$(uname -s)" == "Darwin" ]; then
