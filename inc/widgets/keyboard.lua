@@ -1,4 +1,7 @@
 -- Provided by: http://awesome.naquadah.org/wiki/Change_keyboard_maps
+local wibox = require("wibox")
+local awful = require("awful")
+
 -- Keyboard map indicator and changer
 kbdcfg = {}
 kbdcfg.cmd = "setxkbmap"
