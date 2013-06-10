@@ -79,7 +79,7 @@ local wallpaper = require( "inc.wallpaper" )
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+    tags[s] = awful.tag({ "1:term", "2:www", "3:email", "4:im", 5, 6, 7, 8, 9 }, s, layouts[1])
 end
 -- }}}
 
