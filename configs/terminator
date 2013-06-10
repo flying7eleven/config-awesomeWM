@@ -1,14 +1,55 @@
 [global_config]
-  focus = system
-
+  enabled_plugins = ,
+  inactive_color_offset = 0.56
+  borderless = True
 [keybindings]
   full_screen = <Ctrl><Shift>F11
-
 [profiles]
   [[default]]
-    use_system_font = false
+    use_system_font = False
+    custom_command = 'echo \"foo#bar\"'
+    scrollback_lines = 1000000
+    background_image = None
     font = Source Code Pro Regular 12
-    background_color = "#000000" # A comment
-    scrollback_lines = '1000000' #More comment. Single quotes are valid too
-    cursor_blink = True
-    custom_command = "echo \"foo#bar\"" #Final comment - this will work as expected.
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+  [[programming]]
+    [[[child0]]]
+      position = 0:0
+      type = Window
+      order = 0
+      parent = ""
+      size = 1916, 1196
+    [[[child1]]]
+      position = 958
+      type = HPaned
+      order = 0
+      parent = child0
+    [[[child2]]]
+      position = 598
+      type = VPaned
+      order = 0
+      parent = child1
+    [[[terminal3]]]
+      profile = default
+      type = Terminal
+      order = 0
+      parent = child2
+    [[[terminal5]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child1
+    [[[terminal4]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child2
+[plugins]
