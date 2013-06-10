@@ -30,4 +30,5 @@ sparkleshare start &
 numlockx &
 
 # start the window manager
+#exec gnome-session
 exec awesome >> ~/.cache/awesome/stdout 2>> ~/.cache/awesome/stderr
