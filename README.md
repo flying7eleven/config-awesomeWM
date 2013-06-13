@@ -14,12 +14,12 @@ Usage (on ArchLinux)
 2. Install awesomewm and some other required applications
    ```
    sudo pacman -Sy
-   sudo pacman -S awesome xlock pcmanfm gtk-engines lxappearance yaourt numlockx
+   sudo pacman -S awesome xlock pcmanfm yaourt numlockx networkmanager network-manager-applet
    ```
 
-3. for Search the GTK+ themes (and fonts) you want to use and install them from AUR:
+3. Install some required fonts from AUR:
    ```
-   yaourt -S clearlooks-phenix-gtk-theme-git delorean-dark-theme-3.6 ttf-source-code-pro compton-git
+   yaourt -S ttf-google-fonts-git
    ```
 
 4. Clone the repository to the right directory and update the submodules
@@ -39,8 +39,8 @@ Usage (on ArchLinux)
 6. Configure the default applications
    Set some of the default applications of your computer
    ```
-   xdg-mime default chromium.desktop x-scheme-handler/http
-   xdg-mime default chromium.desktop x-scheme-handler/https
+   xdg-mime default google-chrome.desktop x-scheme-handler/http
+   xdg-mime default google-chrome.desktop x-scheme-handler/https
    xdg-mime default pcmanfm.desktop inode/directory
    xdg-mime default pcmanfm.desktop inode/directory
    xdg-mime default thunderbird.desktop x-scheme-handler/mailto
@@ -49,14 +49,15 @@ Usage (on ArchLinux)
 
 7. Ensure that the correct git confuration is used
    ```
-   git config --global include.path ~/.config/awesome/userdir/gitconfig
+   git config --global include.path ~/.config/awesome/userdir/configs/gitconfig
    git config --global user.name "Your Name"
    git config --global user.email your@address.com
    ```
 
-8. Start awesomewm
+8. Enable and start the network-manager:
+   ```
+   sudo systemctl enable NetworkManager
+   sudo systemctl start NetworkManager
+   ```
 
-9. Select the desired theme:
-   ```
-   lxappearance
-   ```
+9. Start awesomewm
