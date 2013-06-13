@@ -29,6 +29,9 @@ sparkleshare start &
 # enable the numlock while logging in
 numlockx &
 
+# enable the network-manager applet
+nm-applet &
+
 # start the window manager
 #exec gnome-session
 exec awesome >> ~/.cache/awesome/stdout 2>> ~/.cache/awesome/stderr
