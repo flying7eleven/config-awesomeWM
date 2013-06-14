@@ -62,7 +62,7 @@ Usage (on ArchLinux)
    ```
    ip link show
    ```
-   Then put the following lines into your ```/etc/dhclient.conf```:
+   Then replace the interface name and your MAC address in the following lines and execute them to write the information into your ```/etc/dhclient.conf``` file:
    ```
    sudo sh -c "echo 'interface \"eth0\" {' >> /etc/dhclient.conf"
    sudo sh -c "echo '    send dhcp-client-identifier 01:aa:bb:cc:dd:ee:ff;' {' >> /etc/dhclient.conf"
