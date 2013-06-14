@@ -54,10 +54,27 @@ Usage (on ArchLinux)
    git config --global user.email your@address.com
    ```
 
-8. Enable and start the network-manager:
+8. Configure the network-manager to get the correct DHCP address. The first step is to tell the network-manager which DHCP implementation should be used:
    ```
+   sudo sh -c "echo 'dhcp=dhcpcd' >> /etc/NetworkManager/NetworkManager.conf"
+   ```
+   After this was done, get your MAC address by entering the following command:
+   ```
+   ip link show
+   ```
+   Then put the following lines into your ```/etc/dhclient.conf```:
+   ```
+   sudo sh -c "echo 'interface \"eth0\" {' >> /etc/dhclient.conf"
+   sudo sh -c "echo '    send dhcp-client-identifier 01:aa:bb:cc:dd:ee:ff;' {' >> /etc/dhclient.conf"
+   sudo sh -c "echo '}' >> /etc/dhclient.conf"
+   ```
+
+9. Disable the manually started DHCP client and enable and start the network-manager:
+   ```
+   sudo systemctl stop dhcpcd
+   sudo systemctl disable dhcpcd
    sudo systemctl enable NetworkManager
    sudo systemctl start NetworkManager
    ```
 
-9. Start awesomewm
+10. Start awesomewm
