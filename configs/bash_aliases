@@ -10,8 +10,8 @@ alias dev="terminator -l programming"
 
 # if we're running on MacOS, change some unsupported aliases
 if [ "$(uname -s)" == "Darwin" ]; then
-	alias ll="clear && ls -l"
-	alias la="clear && ls -la"
+	alias ll="clear && ls -lG"
+	alias la="clear && ls -laG"
 	unalias open
 	unalias tigger
 	unalias pac
