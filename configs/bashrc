@@ -30,6 +30,10 @@ fi
 # set the default editor which should be used
 export EDITOR="vim"
 
+# set the default paths for using Ogre3D
+export PATH="/opt/Ogre3D/bin:$PATH"
+export LD_LIBRARY_PATH="/opt/Ogre3D/lib:$LD_LIBRARY_PATH"
+
 # set the default paths for using the MacPorts applications
 export PATH="/opt/local/bin:$PATH"
 export LD_LIBRARY_PATH="/opt/local/lib:$LD_LIBRARY_PATH"
