@@ -7,8 +7,12 @@ if [ "$(uname -s)" == "Darwin" ]; then
 	source /opt/local/etc/profile.d/bash_completion.sh
 	source /opt/local/share/git-core/git-prompt.sh
 else
-	source /usr/share/git/completion/git-completion.bash
-	source /usr/share/git/completion/git-prompt.sh
+	if [ -f /usr/share/git/completion/git-completion.bash ]; then
+		source /usr/share/git/completion/git-completion.bash
+	fi
+	if [ -f /usr/share/git/completion/git-prompt.bash ]; then
+		source /usr/share/git/completion/git-prompt.sh
+	fi
 fi
 
 #
