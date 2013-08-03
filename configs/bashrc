@@ -35,6 +35,9 @@ fi
 export PATH="/opt/local/bin/:$PATH"
 export LD_LIBRARY_PATH="/opt/local/lib:$LD_LIBRARY_PATH"
 
+# settings for the Android SDK
+export PATH="/Applications/AndroidSDK/platform-tools/:$PATH"
+
 # set the default editor which should be used
 export EDITOR="vim"
 
