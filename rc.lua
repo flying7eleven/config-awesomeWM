@@ -354,6 +354,8 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "Mumble" },
       properties = { floating = true } },
+    { rule = { class = "weka-gui-GUIChooser" },
+      properties = { floating = true } },
     { rule = { class = "fiji-Main" },
       properties = { floating = true } },
     -- Set Firefox to always map on tags number 2 of screen 1.
