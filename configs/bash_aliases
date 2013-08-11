@@ -1,5 +1,5 @@
-alias ll="clear && ls -l --color=auto"
-alias la="clear && ls -la --color=auto"
+alias ll="clear && ls -lh --color=auto"
+alias la="clear && ls -lha --color=auto"
 alias pac="yaourt"
 alias gits="clear && git status"
 alias tigger="tig --all"
