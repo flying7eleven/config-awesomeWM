@@ -32,6 +32,9 @@ numlockx &
 # enable the network-manager applet
 nm-applet &
 
+# enable the tool for controlling the snd
+volumeicon &
+
 # start the window manager
 #exec gnome-session
 exec awesome >> ~/.cache/awesome/stdout 2>> ~/.cache/awesome/stderr
