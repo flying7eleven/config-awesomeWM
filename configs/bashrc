@@ -59,6 +59,10 @@ export PATH="/opt/mevislab/bin:$PATH"
 # export the required variables for using Fiji
 export PATH="/home/thuetz/Applications/Fiji.app:$PATH"
 
+# export the required variables for using martins registration tools
+export LD_LIBRARY_PATH="/opt/registrationtools/lib:$LD_LIBRARY_PATH"
+export PATH="/opt/registrationtools/bin:$PATH"
+
 # return value visualisation
 PS1=$IBlack$Time24h$Color_Off'$(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
