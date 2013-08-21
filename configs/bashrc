@@ -31,6 +31,9 @@ if [ "$(uname -s)" == "Darwin" ]; then
 	export LC_MESSAGES="en_US.UTF-8"
 fi
 
+# fix a bug with java apps and awesome
+export _JAVA_AWT_WM_NONREPARENTING=1
+
 # settings for MacPorts
 export PATH="/opt/local/bin/:$PATH"
 export LD_LIBRARY_PATH="/opt/local/lib:$LD_LIBRARY_PATH"
