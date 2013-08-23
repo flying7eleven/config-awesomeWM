@@ -9,6 +9,7 @@ alias nb="ipython2 notebook --pylab=inline"
 alias dev="terminator -l programming"
 alias tl="clear && task long && task calendar"
 alias tn="clear && task next && task calendar"
+alias tb="clear && task burndown.daily"
 
 # if we're running on MacOS, change some unsupported aliases
 if [ "$(uname -s)" == "Darwin" ]; then
