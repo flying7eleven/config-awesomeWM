@@ -72,6 +72,9 @@ local layouts =
 
 -- {{{ Wallpaper
 local wallpaper = require( "inc.wallpaper" )
+-- }}}
+
+-- {{{ Some widgets
 local keyboardwidget = require( "inc.widgets.keyboard" )
 -- }}}
 
