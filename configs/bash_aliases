@@ -7,9 +7,10 @@ alias open="xdg-open"
 alias grep="grep -i --color=auto"
 alias nb="ipython2 notebook --pylab=inline"
 alias dev="terminator -l programming"
-alias tl="clear && task long && task calendar"
-alias tn="clear && task next && task calendar"
-alias tb="clear && task burndown.daily"
+alias tlw="clear && task +work long && task calendar"
+alias tlp="clear && task +private long && task calendar"
+alias tbw="clear && task +work burndown.daily"
+alias tbp="clear && task +private burndown.daily"
 
 # if we're running on MacOS, change some unsupported aliases
 if [ "$(uname -s)" == "Darwin" ]; then
