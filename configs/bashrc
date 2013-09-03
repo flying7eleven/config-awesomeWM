@@ -34,6 +34,9 @@ fi
 # fix a bug with java apps and awesome
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+# be able to call the android tools on my linux computer
+export PATH="$PATH:/opt/android-sdk/sdk/tools:/opt/android-sdk/sdk/platform-tools:/opt/android-studio/bin"
+
 # settings for MacPorts
 export PATH="/opt/local/bin/:$PATH"
 export LD_LIBRARY_PATH="/opt/local/lib:$LD_LIBRARY_PATH"
