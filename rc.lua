@@ -360,7 +360,11 @@ awful.rules.rules = {
     { rule = { class = "weka-gui-GUIChooser" },
       properties = { floating = true } },
     { rule = { class = "fiji-Main" },
-      properties = { floating = true } },
+      properties = { floating = true, maximized_vertical = false, maximized_horizontal = false } },
+    { rule = { instance = "sun-awt-X11-XFramePeer" },
+      properties = { floating = true, maximized_vertical = false, maximized_horizontal = false } },
+    { rule = { name = "Java" },
+      properties = { floating = true, maximized_vertical = false, maximized_horizontal = false } },
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { tag = tags[1][2] } },
