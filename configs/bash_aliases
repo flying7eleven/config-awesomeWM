@@ -16,6 +16,8 @@ alias tbp="clear && task +private burndown.daily"
 if [ "$(uname -s)" == "Darwin" ]; then
 	alias ll="clear && ls -lG"
 	alias la="clear && ls -laG"
+	unalias dev
+	unalias nb
 	unalias open
 	unalias tigger
 	unalias pac
