@@ -84,3 +84,6 @@ else \
   # @2 - Prompt when not in GIT repo
   echo " '$UserName\@$PCName\ $Yellow$PathShort$Color_Off'\$ "; \
 fi)'
+
+# set the correct umask
+umask 002
