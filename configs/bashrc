@@ -37,7 +37,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 # set some pkg-config path for finding some libraries
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/opt/piminterface/lib/pkgconfig/"
 
-# added the path to the binaries for dashing
+# added the path to the binaries for dashing and taskwarrior-web
 export PATH="/home/$USER/.gem/ruby/2.0.0/bin:$PATH"
 
 # be able to call the android tools on my linux computer
