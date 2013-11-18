@@ -35,6 +35,9 @@ nm-applet &
 # enable the tool for controlling the snd
 volumeicon &
 
+# enable the taskwarrior webserver
+task-web --port 5678 --host 127.0.0.1 --no-launch
+
 # start the window manager
 #exec gnome-session
 exec awesome >> ~/.cache/awesome/stdout 2>> ~/.cache/awesome/stderr
