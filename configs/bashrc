@@ -31,8 +31,8 @@ if [ "$(uname -s)" == "Darwin" ]; then
 	export LC_MESSAGES="en_US.UTF-8"
 fi
 
-# fix a bug with java apps and awesome
-export _JAVA_AWT_WM_NONREPARENTING=1
+# fix a bug with java apps and awesome (currently disabled because it works now fine without it)
+# export _JAVA_AWT_WM_NONREPARENTING=1
 
 # set some pkg-config path for finding some libraries
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/opt/piminterface/lib/pkgconfig/"

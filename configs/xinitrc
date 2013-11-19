@@ -11,6 +11,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
+# fix a bug with awesome and java applications
+wmname LG3D
+
 # ensure that we have a composing manager running
 # compton --config ~/.config/awesome/userdir/compton -b
 
