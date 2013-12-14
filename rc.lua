@@ -367,6 +367,8 @@ awful.rules.rules = {
       properties = { floating = true, maximized_vertical = false, maximized_horizontal = false } },
     { rule = { name = "NetBeans IDE 7.4" },
       properties = { floating = false } },
+    { rule = { name = "RealLife Character Editor" },
+      properties = { floating = true } },
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { tag = tags[1][2] } },
