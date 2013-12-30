@@ -31,6 +31,13 @@ if [ "$(uname -s)" == "Darwin" ]; then
 	export LC_MESSAGES="en_US.UTF-8"
 fi
 
+#
+PHYSBASH=$(readlink -f ~/.bashrc)
+PHYSPATH=$(dirname $PHYSBASH)
+if [ "$(hostname)" == "zockepeter" ]; then
+	source $PHYSPATH/bash_paths.zockepeter
+fi
+
 # fix a bug with java apps and awesome (currently disabled because it works now fine without it)
 # export _JAVA_AWT_WM_NONREPARENTING=1
 
