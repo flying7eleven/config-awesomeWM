@@ -14,20 +14,14 @@ fi
 # fix a bug with awesome and java applications
 wmname LG3D
 
-# ensure that we have a composing manager running
-# compton --config ~/.config/awesome/userdir/compton -b
-
 # ensure that our synergy server is running
 synergys
 
 # start the dropbox deamon
 dropboxd &
 
-# start the ownCloud client
-# owncloud & # TODO: 2013-05-21 the current version needs too much RAM
-
 # start the SparkleShare client
-sparkleshare start &
+#sparkleshare start &
 
 # enable the numlock while logging in
 numlockx &
