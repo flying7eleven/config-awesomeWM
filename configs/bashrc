@@ -1,17 +1,17 @@
-# Some parts are provided by Mike Stewart (http://MediaDoneRight.com)
+	# Some parts are provided by Mike Stewart (http://MediaDoneRight.com)
 
-# source some other required scripts
-source ~/.bash_aliases
-source ~/.bash_colors
-if [ "$(uname -s)" == "Darwin" ]; then
-	source /opt/local/etc/profile.d/bash_completion.sh
-	source /opt/local/share/git-core/git-prompt.sh
-else
-	if [ -f /usr/share/git/completion/git-completion.bash ]; then
-		source /usr/share/git/completion/git-completion.bash
-	fi
-	if [ -f /usr/share/git/completion/git-prompt.sh ]; then
-		source /usr/share/git/completion/git-prompt.sh
+	# source some other required scripts
+	source ~/.bash_aliases
+	source ~/.bash_colors
+	if [ "$(uname -s)" == "Darwin" ]; then
+		source /opt/local/etc/profile.d/bash_completion.sh
+		source /opt/local/share/git-core/git-prompt.sh
+	else
+		if [ -f /usr/share/git/completion/git-completion.bash ]; then
+			source /usr/share/git/completion/git-completion.bash
+		fi
+		if [ -f /usr/share/git/completion/git-prompt.sh ]; then
+			source /usr/share/git/completion/git-prompt.sh
 	fi
 fi
 
@@ -40,7 +40,6 @@ fi
 
 # fix a bug with java apps and awesome
 export _JAVA_AWT_WM_NONREPARENTING=1
-wmname LG3D
 
 # set some pkg-config path for finding some libraries
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/opt/piminterface/lib/pkgconfig/"
