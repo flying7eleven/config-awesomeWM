@@ -1,2 +1,6 @@
-# added the path to the binaries for dashing and taskwarrior-web
+# add the paths to the binaries for dashing and taskwarrior-web
 export PATH="/home/$USER/.gem/ruby/2.0.0/bin:$PATH"
+
+# add the paths for the android development
+export PATH="/localdata/software/android-studio/sdk/platform-tools:/localdata/software/android-studio/sdk/tools:/localdata/software/android-studio/bin:$PATH"
+
