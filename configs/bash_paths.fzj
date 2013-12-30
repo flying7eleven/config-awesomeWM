@@ -1,0 +1,40 @@
+# set some pkg-config path for finding some libraries
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/opt/piminterface/lib/pkgconfig/"
+
+# added the path to the binaries for dashing and taskwarrior-web
+export PATH="/home/$USER/.gem/ruby/2.0.0/bin:$PATH"
+
+# be able to call the android tools on my linux computer
+export PATH="$PATH:/opt/android-sdk/sdk/tools:/opt/android-sdk/sdk/platform-tools:/opt/android-studio/bin"
+
+# settings for MacPorts
+export PATH="/opt/local/bin/:$PATH"
+export LD_LIBRARY_PATH="/opt/local/lib:$LD_LIBRARY_PATH"
+
+# settings for the Android SDK
+export PATH="/Applications/AndroidSDK/platform-tools/:$PATH"
+
+# set the default editor which should be used
+export EDITOR="vim"
+
+# set the default paths for using Ogre3D
+export PATH="/opt/Ogre3D/bin:$PATH"
+export LD_LIBRARY_PATH="/opt/Ogre3D/lib:$LD_LIBRARY_PATH"
+
+# set the default paths for using the MacPorts applications
+export PATH="/opt/local/bin:$PATH"
+export LD_LIBRARY_PATH="/opt/local/lib:$LD_LIBRARY_PATH"
+
+# export the required variables for using elastix
+export PATH="/opt/elastix/bin:$PATH"
+export LD_LIBRARY_PATH="/opt/elastix/lib:$LD_LIBRARY_PATH"
+
+# export the require variables for using MeVisLab
+export PATH="/opt/mevislab/bin:$PATH"
+
+# export the required variables for using Fiji
+export PATH="/home/thuetz/Applications/Fiji.app:$PATH"
+
+# export the required variables for using martins registration tools
+export LD_LIBRARY_PATH="/opt/registrationtools/lib:$LD_LIBRARY_PATH"
+export PATH="/opt/registrationtools/bin:$PATH"

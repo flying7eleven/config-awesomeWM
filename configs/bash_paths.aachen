@@ -1,0 +1,2 @@
+# added the path to the binaries for dashing and taskwarrior-web
+export PATH="/home/$USER/.gem/ruby/2.0.0/bin:$PATH"
