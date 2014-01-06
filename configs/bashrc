@@ -35,8 +35,10 @@ fi
 PHYSBASH=$(readlink -f ~/.bashrc)
 PHYSPATH=$(dirname $PHYSBASH)
 if [ "$(hostname)" == "zockepeter" ]; then
+	echo "Loaded shell scripts for the computer at home"
 	source $PHYSPATH/bash_paths.zockepeter
 elif [ "$(hostname)" == "imedv18" ]; then
+	echo "Loaded shell scripts for the computer at work"
 	source $PHYSPATH/bash_paths.imedv18
 fi
 
