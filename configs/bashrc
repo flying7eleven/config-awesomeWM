@@ -42,7 +42,6 @@ fi
 
 # fix a bug with java apps and awesome
 export _JAVA_AWT_WM_NONREPARENTING=1
-wmname LG3D
 
 # set the default editor which should be used
 export EDITOR="vim"
