@@ -31,67 +31,21 @@ if [ "$(uname -s)" == "Darwin" ]; then
 	export LC_MESSAGES="en_US.UTF-8"
 fi
 
+#
 PHYSBASH=$(readlink -f ~/.bashrc)
 PHYSPATH=$(dirname $PHYSBASH)
 if [ "$(hostname)" == "zockepeter" ]; then
 	source $PHYSPATH/bash_paths.zockepeter
+elif [ "$(hostname)" == "imedv18" ]; then
+	source $PHYSPATH/bash_paths.imedv18
 fi
-
-#
-export PATH="/opt/imageDrift/bin:$PATH"
-
-#
-export PATH="/opt/java/bin:$PATH"
-export LD_LIBRARY_PATH="/opt/java/lib:$LD_LIBRARY_PATH"
 
 # fix a bug with java apps and awesome
 export _JAVA_AWT_WM_NONREPARENTING=1
 wmname LG3D
 
-# set some pkg-config path for finding some libraries
-export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/opt/piminterface/lib/pkgconfig/"
-
-#
-export PATH="/opt/martintools/bin:$PATH"
-export LD_LIBRARY_PATH="/opt/martintools/lib:$LD_LIBRARY_PATH"
-
-# added the path to the binaries for dashing and taskwarrior-web
-export PATH="/home/$USER/.gem/ruby/2.0.0/bin:$PATH"
-
-# be able to call the android tools on my linux computer
-export PATH="$PATH:/opt/android-sdk/sdk/tools:/opt/android-sdk/sdk/platform-tools:/opt/android-studio/bin"
-
-# settings for MacPorts
-export PATH="/opt/local/bin/:$PATH"
-export LD_LIBRARY_PATH="/opt/local/lib:$LD_LIBRARY_PATH"
-
-# settings for the Android SDK
-export PATH="/Applications/AndroidSDK/platform-tools/:$PATH"
-
 # set the default editor which should be used
 export EDITOR="vim"
-
-# set the default paths for using Ogre3D
-export PATH="/opt/Ogre3D/bin:$PATH"
-export LD_LIBRARY_PATH="/opt/Ogre3D/lib:$LD_LIBRARY_PATH"
-
-# set the default paths for using the MacPorts applications
-export PATH="/opt/local/bin:$PATH"
-export LD_LIBRARY_PATH="/opt/local/lib:$LD_LIBRARY_PATH"
-
-# export the required variables for using elastix
-export PATH="/opt/elastix/bin:$PATH"
-export LD_LIBRARY_PATH="/opt/elastix/lib:$LD_LIBRARY_PATH"
-
-# export the require variables for using MeVisLab
-export PATH="/opt/mevislab/bin:$PATH"
-
-# export the required variables for using Fiji
-export PATH="/home/thuetz/Applications/Fiji.app:$PATH"
-
-# export the required variables for using martins registration tools
-export LD_LIBRARY_PATH="/opt/registrationtools/lib:$LD_LIBRARY_PATH"
-export PATH="/opt/registrationtools/bin:$PATH"
 
 # return value visualisation
 PS1=$IBlack$Time24h$Color_Off'$(git branch &>/dev/null;\
