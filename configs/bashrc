@@ -31,11 +31,22 @@ if [ "$(uname -s)" == "Darwin" ]; then
 	export LC_MESSAGES="en_US.UTF-8"
 fi
 
+#
+export PATH="/opt/imageDrift/bin:$PATH"
+
+#
+export PATH="/opt/java/bin:$PATH"
+export LD_LIBRARY_PATH="/opt/java/lib:$LD_LIBRARY_PATH"
+
 # fix a bug with java apps and awesome (currently disabled because it works now fine without it)
 # export _JAVA_AWT_WM_NONREPARENTING=1
 
 # set some pkg-config path for finding some libraries
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/opt/piminterface/lib/pkgconfig/"
+
+#
+export PATH="/opt/martintools/bin:$PATH"
+export LD_LIBRARY_PATH="/opt/martintools/lib:$LD_LIBRARY_PATH"
 
 # added the path to the binaries for dashing and taskwarrior-web
 export PATH="/home/$USER/.gem/ruby/2.0.0/bin:$PATH"
