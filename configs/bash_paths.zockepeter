@@ -1,3 +1,6 @@
+# export the path to the users key store
+export ANDROID_KEYSTORE="/home/thuetz/Dropbox/AndroidKeyStore.dat"
+
 # add the paths to the binaries for dashing and taskwarrior-web
 export PATH="/home/$USER/.gem/ruby/2.0.0/bin:$PATH"
 
