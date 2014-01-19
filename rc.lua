@@ -81,13 +81,11 @@ local keyboardwidget = require( "inc.widgets.keyboard" )
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {}
--- for s = 1, screen.count() do
-    -- Each screen has its own tag table.
---    tags[s] = awful.tag({ "1:term", "2:www", "3:email", "4:spotify", "5:IDE", 6, 7, 8, 9 }, s, layouts[2])
--- end
-tags[ 1 ] = awful.tag({ "1:term", "2:www", 3, 4, 5, 6, 7, 8, 9 }, 1, layouts[2])
 if screen.count() > 1 then
+	tags[ 1 ] = awful.tag({ "1:term", "2:www", 3, 4, 5, 6, 7, 8, 9 }, 1, layouts[2])
 	tags[ 2 ] = awful.tag({ "1:spotify", "2:email", "3", "4", "5", 6, 7, 8, 9 }, 2, layouts[2])
+else
+	tags[ 1 ] = awful.tag({ "1:term", "2:www", "3:email", "4:steam", "5:spotify", "6:ide", 7, 8, 9 }, 1, layouts[2])
 end
 -- }}}
 
