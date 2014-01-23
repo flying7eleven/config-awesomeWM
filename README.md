@@ -33,9 +33,9 @@ Usage (on ArchLinux)
 
 5. Install the provided user scripts:
    ```
-   ln -s $HOME/.config/awesome/userconfigs/zsh/zshrc .zshrc
-   ln -s $HOME/.config/awesome/userconfigs/zsh/zsh_profile .zsh_profile
-   ln -s $HOME/.config/awesome/userconfigs/zsh/zsh_aliases .zsh_aliases
+   ln -s $HOME/.config/awesome/userconfigs/shell/zshrc .zshrc
+   ln -s $HOME/.config/awesome/userconfigs/shell/zsh_profile .zsh_profile
+   ln -s $HOME/.config/awesome/userconfigs/shell/shell_aliases .zsh_aliases
    ```
 
 6. Change the default shell to zsh
