@@ -31,11 +31,15 @@ Usage (on ArchLinux)
    git submodule update
    ```
 
-5. Install the provided user scripts:
+5.1. Install the provided user scripts (for zsh):
    ```
    ln -s $HOME/.config/awesome/userconfigs/shell/zshrc .zshrc
    ln -s $HOME/.config/awesome/userconfigs/shell/zsh_profile .zsh_profile
-   ln -s $HOME/.config/awesome/userconfigs/shell/shell_aliases .zsh_aliases
+
+5.2. Install the provided user scripts (for bash):
+   ```
+   ln -s $HOME/.config/awesome/userconfigs/shell/bashrc .bashrc
+   ln -s $HOME/.config/awesome/userconfigs/shell/bash_profile .bash_profile
    ```
 
 6. Change the default shell to zsh
