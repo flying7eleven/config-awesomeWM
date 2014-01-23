@@ -33,11 +33,17 @@ Usage (on ArchLinux)
 
 5. Install the provided user scripts:
    ```
-   ln -s $HOME/.config/awesome/userdir/configs/zsh/zshrc .zshrc
-   ln -s $HOME/.config/awesome/userdir/configs/zsh/zsh_profile .zsh_profile
+   ln -s $HOME/.config/awesome/userconfigs/zsh/zshrc .zshrc
+   ln -s $HOME/.config/awesome/userconfigs/zsh/zsh_profile .zsh_profile
+   ln -s $HOME/.config/awesome/userconfigs/zsh/zsh_aliases .zsh_aliases
    ```
 
-6. Configure the default applications
+6. Change the default shell to zsh
+   ```
+   chsh -s /bin/zsh
+   ```
+
+7. Configure the default applications
    Set some of the default applications of your computer
    ```
    xdg-mime default google-chrome.desktop x-scheme-handler/http
@@ -48,14 +54,14 @@ Usage (on ArchLinux)
    xdg-mime default thunderbird.desktop message/rfc822 
    ```
 
-7. Ensure that the correct git confuration is used
+8. Ensure that the correct git confuration is used
    ```
    git config --global include.path ~/.config/awesome/userdir/configs/gitconfig
    git config --global user.name "Your Name"
    git config --global user.email your@address.com
    ```
 
-8. Configure the network-manager to get the correct DHCP address. The first step is to tell the network-manager which DHCP implementation should be used:
+9. Configure the network-manager to get the correct DHCP address. The first step is to tell the network-manager which DHCP implementation should be used:
    ```
    sudo sh -c "echo 'dhcp=dhcpcd' >> /etc/NetworkManager/NetworkManager.conf"
    ```
@@ -70,7 +76,7 @@ Usage (on ArchLinux)
    sudo sh -c "echo '}' >> /etc/dhclient.conf"
    ```
 
-9. Disable the manually started DHCP client and enable and start the network-manager:
+10. Disable the manually started DHCP client and enable and start the network-manager:
    ```
    sudo systemctl stop dhcpcd
    sudo systemctl disable dhcpcd
@@ -78,4 +84,4 @@ Usage (on ArchLinux)
    sudo systemctl start NetworkManager
    ```
 
-10. Start awesomewm
+11. Start awesomewm
