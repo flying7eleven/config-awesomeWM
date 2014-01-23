@@ -1,6 +1,3 @@
 [submodule "themes"]
 	path = themes
 	url = git@github.com:dimaursu16/awesome-themes.git
-[submodule "awmodoro"]
-	path = awmodoro
-	url = git@github.com:thuetz/awmodoro.git
