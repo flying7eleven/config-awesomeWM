@@ -33,7 +33,8 @@ Usage (on ArchLinux)
 
 5. Install the provided user scripts:
    ```
-   python2 installUserDir.py
+   ln -s $HOME/.config/awesome/userdir/configs/zsh/zshrc .zshrc
+   ln -s $HOME/.config/awesome/userdir/configs/zsh/zsh_profile .zsh_profile
    ```
 
 6. Configure the default applications
