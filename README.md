@@ -31,7 +31,7 @@ Usage (on ArchLinux)
    git submodule update
    ```
 
-5.1. Install the provided user scripts (for zsh):
+5. Install the provided user scripts (for zsh):
    ```
    ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zshrc $HOME/.zshrc
    ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zsh_profile $HOME/.zsh_profile
