@@ -40,6 +40,7 @@ Usage (on ArchLinux)
    ln -s $HOME/.config/awesome/userconfigs/xinitrc $HOME/.xinitrc
    ln -s $HOME/.config/awesome/userconfigs/taskrc $HOME/.taskrc
    ln -s $HOME/.config/awesome/userconfigs/tmuxinator $HOME/.tmuxinator
+   ln -s $HOME/.config/awesome/userconfigs/tmux $HOME/.tmux.conf
    ```
 
 6. Change the default shell to zsh
