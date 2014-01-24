@@ -39,6 +39,7 @@ Usage (on ArchLinux)
    ln -s $HOME/.config/awesome/userconfigs/vimrc $HOME/.vimrc
    ln -s $HOME/.config/awesome/userconfigs/xinitrc $HOME/.xinitrc
    ln -s $HOME/.config/awesome/userconfigs/taskrc $HOME/.taskrc
+   ln -s $HOME/.config/awesome/userconfigs/tmuxinator $HOME/.tmuxinator
    ```
 
 6. Change the default shell to zsh
