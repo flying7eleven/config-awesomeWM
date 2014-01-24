@@ -33,13 +33,12 @@ Usage (on ArchLinux)
 
 5.1. Install the provided user scripts (for zsh):
    ```
-   ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zshrc .zshrc
-   ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zsh_profile .zsh_profile
-
-5.2. Install the provided user scripts (for bash):
-   ```
-   ln -s $HOME/.config/awesome/userconfigs/shell/bash/bashrc .bashrc
-   ln -s $HOME/.config/awesome/userconfigs/shell/bash/bash_profile .bash_profile
+   ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zshrc $HOME/.zshrc
+   ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zsh_profile $HOME/.zsh_profile
+   ln -s $HOME/.config/awesome/userconfigs/terminator $HOME/.config/terminator/config
+   ln -s $HOME/.config/awesome/userconfigs/vimrc $HOME/.vimrc
+   ln -s $HOME/.config/awesome/userconfigs/xinitrc $HOME/.xinitrc
+   ln -s $HOME/.config/awesome/userconfigs/taskrc $HOME/.taskrc
    ```
 
 6. Change the default shell to zsh
