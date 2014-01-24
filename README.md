@@ -45,6 +45,7 @@ Usage (on ArchLinux)
    ```
    chsh -s /bin/zsh
    ```
+   Restart the terminal aftering issuing the command above!
 
 7. Configure the default applications
    Set some of the default applications of your computer
