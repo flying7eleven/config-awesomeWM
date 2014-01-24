@@ -14,12 +14,12 @@ Usage (on ArchLinux)
 2. Install awesomewm and some other required applications
    ```
    sudo pacman -Sy
-   sudo pacman -S awesome xlock pcmanfm yaourt numlockx networkmanager network-manager-applet
+   sudo pacman -S awesome xlock pcmanfm yaourt numlockx networkmanager network-manager-applet tmux
    ```
 
-3. Install some required fonts from AUR:
+3. Install some required fonts and some other required tools from AUR:
    ```
-   yaourt -S ttf-google-fonts-git
+   yaourt -S ttf-google-fonts-git tmuxinator --noconfirm
    ```
 
 4. Clone the repository to the right directory and update the submodules
