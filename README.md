@@ -19,7 +19,7 @@ Usage (on ArchLinux)
 
 3. Install some required fonts and some other required tools from AUR:
    ```
-   yaourt -S ttf-google-fonts-git tmuxinator --noconfirm
+   yaourt -S ttf-google-fonts-git powerline-fonts-git tmuxinator --noconfirm
    ```
 
 4. Clone the repository to the right directory and update the submodules
