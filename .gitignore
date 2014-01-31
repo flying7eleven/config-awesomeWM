@@ -2,4 +2,5 @@
 *.swp
 *.tmp
 *.bak
+*.pyc
 .DS_Store
