@@ -43,8 +43,9 @@ Usage (on ArchLinux)
    ln -s $HOME/.config/awesome/userconfigs/taskrc $HOME/.taskrc
    ln -s $HOME/.config/awesome/userconfigs/tmuxinator $HOME/.tmuxinator
    ln -s $HOME/.config/awesome/userconfigs/tmux $HOME/.tmux.conf
-   ln -s $HOME/.config/awesome/userconfigs/systemd/offlineimap.service $HOME/.config/systemd/user/offlineimap.service
-   ln -s $HOME/.config/awesome/userconfigs/systemd/offlineimap.timer $HOME/.config/systemd/user/offlineimap.timer
+   #ln -s $HOME/.config/awesome/userconfigs/systemd/offlineimap.service $HOME/.config/systemd/user/offlineimap.service
+   #ln -s $HOME/.config/awesome/userconfigs/systemd/offlineimap.timer $HOME/.config/systemd/user/offlineimap.timer
+   ln -s $HOME/.config/awesome/userconfigs/mailcap $HOME/.mailcap
    ```
 
 6. Change the default shell to zsh
