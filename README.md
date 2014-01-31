@@ -33,6 +33,8 @@ Usage (on ArchLinux)
 
 5. Install the provided user scripts (for zsh):
    ```
+   mkdir -p $HOME/.config/systemd/user
+   mkdir -p $HOME/.config/terminator
    ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zshrc $HOME/.zshrc
    ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zsh_profile $HOME/.zsh_profile
    ln -s $HOME/.config/awesome/userconfigs/terminator $HOME/.config/terminator/config
@@ -41,6 +43,8 @@ Usage (on ArchLinux)
    ln -s $HOME/.config/awesome/userconfigs/taskrc $HOME/.taskrc
    ln -s $HOME/.config/awesome/userconfigs/tmuxinator $HOME/.tmuxinator
    ln -s $HOME/.config/awesome/userconfigs/tmux $HOME/.tmux.conf
+   ln -s $HOME/.config/awesome/userconfigs/systemd/offlineimap.service $HOME/.config/systemd/user/offlineimap.service
+   ln -s $HOME/.config/awesome/userconfigs/systemd/offlineimap.timer $HOME/.config/systemd/user/offlineimap.timer
    ```
 
 6. Change the default shell to zsh
