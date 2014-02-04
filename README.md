@@ -14,7 +14,7 @@ Usage (on MacOS X)
 3. Clone the repository to the right directory and update the submodules
    ```
    cd ~/.config
-   git clone https://github.com/thuetz/awesome-config awesome
+   /opt/local/bin/git clone https://github.com/thuetz/awesome-config awesome
    cd awesome
    git submodule init
    git submodule update
