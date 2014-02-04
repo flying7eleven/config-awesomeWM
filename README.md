@@ -8,7 +8,7 @@ Usage (on MacOS X)
 
 2. Install some core packages required for the rest
    ```
-   sudo port -v install git-core
+   sudo port -v install git-core aspell aspell-dict-de aspell-dict-en
    ```
 
 3. Clone the repository to the right directory and update the submodules
