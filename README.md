@@ -27,8 +27,8 @@ Usage (on MacOS X)
 
 5. Install the provided user scripts (for zsh):
    ```
-   ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zshrc $HOME/.zshrc
-   ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zsh_profile $HOME/.zsh_profile
+   ln -s $HOME/.config/awesome/userconfigs/shell/zshrc $HOME/.zshrc
+   ln -s $HOME/.config/awesome/userconfigs/shell/zsh_profile $HOME/.zsh_profile
    ln -s $HOME/.config/awesome/userconfigs/vimrc $HOME/.vimrc
    ln -s $HOME/.config/awesome/userconfigs/taskrc $HOME/.taskrc
    ln -s $HOME/.config/awesome/userconfigs/tmuxinator $HOME/.tmuxinator
@@ -69,16 +69,14 @@ Usage (on ArchLinux)
    ```
    mkdir -p $HOME/.config/systemd/user
    mkdir -p $HOME/.config/terminator
-   ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zshrc $HOME/.zshrc
-   ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zsh_profile $HOME/.zsh_profile
+   ln -s $HOME/.config/awesome/userconfigs/shell/zshrc $HOME/.zshrc
+   ln -s $HOME/.config/awesome/userconfigs/shell/zsh_profile $HOME/.zsh_profile
    ln -s $HOME/.config/awesome/userconfigs/terminator $HOME/.config/terminator/config
    ln -s $HOME/.config/awesome/userconfigs/vimrc $HOME/.vimrc
    ln -s $HOME/.config/awesome/userconfigs/xinitrc $HOME/.xinitrc
    ln -s $HOME/.config/awesome/userconfigs/taskrc $HOME/.taskrc
    ln -s $HOME/.config/awesome/userconfigs/tmuxinator $HOME/.tmuxinator
    ln -s $HOME/.config/awesome/userconfigs/tmux $HOME/.tmux.conf
-   #ln -s $HOME/.config/awesome/userconfigs/systemd/offlineimap.service $HOME/.config/systemd/user/offlineimap.service
-   #ln -s $HOME/.config/awesome/userconfigs/systemd/offlineimap.timer $HOME/.config/systemd/user/offlineimap.timer
    ln -s $HOME/.config/awesome/userconfigs/mailcap $HOME/.mailcap
    ```
 
