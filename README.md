@@ -8,7 +8,7 @@ Usage (on MacOS X)
 
 2. Install some core packages required for the rest
    ```
-   sudo port -v install git-core
+   sudo port -v install git-core aspell aspell-dict-de aspell-dict-en
    ```
 
 3. Clone the repository to the right directory and update the submodules
@@ -25,7 +25,15 @@ Usage (on MacOS X)
    chsh -s /bin/zsh
    ```
 
-5. TODO
+5. Install the provided user scripts (for zsh):
+   ```
+   ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zshrc $HOME/.zshrc
+   ln -s $HOME/.config/awesome/userconfigs/shell/zsh/zsh_profile $HOME/.zsh_profile
+   ln -s $HOME/.config/awesome/userconfigs/vimrc $HOME/.vimrc
+   ln -s $HOME/.config/awesome/userconfigs/taskrc $HOME/.taskrc
+   ln -s $HOME/.config/awesome/userconfigs/tmuxinator $HOME/.tmuxinator
+   ln -s $HOME/.config/awesome/userconfigs/tmux $HOME/.tmux.conf
+   ```
 
 
 Usage (on ArchLinux)
