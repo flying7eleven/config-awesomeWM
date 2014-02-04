@@ -35,6 +35,13 @@ Usage (on MacOS X)
    ln -s $HOME/.config/awesome/userconfigs/tmux $HOME/.tmux.conf
    ```
 
+6. Ensure that the correct git configuration is used
+   ```
+   git config --global include.path $HOME/.config/awesome/userconfigs/gitconfig
+   git config --global user.name "Your Name"
+   git config --global user.email your@address.com
+   ```
+
 
 Usage (on ArchLinux)
 --------------------
@@ -97,9 +104,9 @@ Usage (on ArchLinux)
    xdg-mime default thunderbird.desktop message/rfc822 
    ```
 
-8. Ensure that the correct git confuration is used
+8. Ensure that the correct git configuration is used
    ```
-   git config --global include.path ~/.config/awesome/userdir/configs/gitconfig
+   git config --global include.path $HOME/.config/awesome/userconfigs/gitconfig
    git config --global user.name "Your Name"
    git config --global user.email your@address.com
    ```
