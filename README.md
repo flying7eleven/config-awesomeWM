@@ -1,6 +1,32 @@
-AwesomeWM Configuration
-=======================
+Userscript & AwesomeWM Configuration
+====================================
 TODO
+
+Usage (on MacOS X)
+------------------
+1. Install MacPorts
+
+2. Install some core packages required for the rest
+   ```
+   sudo port -v install git-core
+   ```
+
+3. Clone the repository to the right directory and update the submodules
+   ```
+   cd ~/.config
+   git clone https://github.com/thuetz/awesome-config awesome
+   cd awesome
+   git submodule init
+   git submodule update
+   ```
+
+4. Change the default shell to zsh
+   ```
+   chsh -s /bin/zsh
+   ```
+
+5. TODO
+
 
 Usage (on ArchLinux)
 --------------------
