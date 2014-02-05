@@ -8,7 +8,7 @@ Usage (on MacOS X)
 
 2. Install some core packages required for the rest
    ```
-   sudo port -v install git-core aspell aspell-dict-de aspell-dict-en
+   sudo port -v install git-core aspell aspell-dict-de aspell-dict-en ruby
    ```
 
 3. Clone the repository to the right directory and update the submodules
@@ -41,6 +41,11 @@ Usage (on MacOS X)
    git config --global include.path $HOME/.config/awesome/userconfigs/gitconfig
    git config --global user.name "Your Name"
    git config --global user.email your@address.com
+   ```
+
+7. Install the tmuxinator scripts
+   ```
+   sudo gem install tmuxinator
    ```
 
 
