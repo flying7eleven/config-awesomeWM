@@ -33,6 +33,7 @@ Usage (on MacOS X)
    ln -s $HOME/.config/awesome/userconfigs/taskrc $HOME/.taskrc
    ln -s $HOME/.config/awesome/userconfigs/tmuxinator $HOME/.tmuxinator
    ln -s $HOME/.config/awesome/userconfigs/tmux $HOME/.tmux.conf
+   ln -s $HOME/.config/awesome/userconfigs/uncrustify.config $HOME/.uncrustify.config
    ```
 
 6. Ensure that the correct git configuration is used
@@ -85,6 +86,7 @@ Usage (on ArchLinux)
    ln -s $HOME/.config/awesome/userconfigs/tmuxinator $HOME/.tmuxinator
    ln -s $HOME/.config/awesome/userconfigs/tmux $HOME/.tmux.conf
    ln -s $HOME/.config/awesome/userconfigs/mailcap $HOME/.mailcap
+   ln -s $HOME/.config/awesome/userconfigs/uncrustify.config $HOME/.uncrustify.config
    ```
 
 6. Change the default shell to zsh
