@@ -61,7 +61,7 @@ Usage (on ArchLinux)
 2. Install awesomewm and some other required applications
    ```
    sudo pacman -Sy
-   sudo pacman -S awesome xlock pcmanfm yaourt numlockx networkmanager network-manager-applet tmux aspell aspell-de aspell-en
+   sudo pacman -S awesome xorg-xinit pcmanfm yaourt numlockx networkmanager network-manager-applet tmux aspell aspell-de aspell-en
    ```
 
 3. Install some required fonts and some other required tools from AUR:
