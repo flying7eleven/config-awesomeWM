@@ -48,6 +48,52 @@ Usage (on MacOS X)
    sudo gem install tmuxinator
    ```
 
+Install Arch Linux
+------------------
+1. Boot from a CD or other install medium
+2. partition your disk. If you are using an EFI system, be sure that your first partition is a FAT32 partion with about 200MB space
+3. Format the partions
+4. Mount the partions as you want them on your system to /mnt
+5. Start the installation of the base system
+   ```
+   pacstrap /mnt base
+   ```
+6. Write the mountpoints into the new system
+   ```
+   genfstab -p /mnt >> /mnt/etc/fstab
+   ```
+7. Go into the new system
+   ```
+   arch-chroot /mnt
+   ```
+8. Install some important packages
+   ```
+   pacman -S vim grub dosfstools efibootmgr xf86-video-nouveau
+   ```
+9. Set the correct hostname
+   ```
+   echo "hostname" > /etc/hostname
+   ```
+10. Set the correct timezone
+    ```
+    ln -s /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+    ```
+11. Uncomment the selected locale in /etc/locale.gen and generate it with locale-gen.
+12. Set locale preferences in /etc/locale.conf
+    ```
+    locale > /etc/locale.conf
+    ```
+13. Add console keymap and font preferences in /etc/vconsole.conf
+    ```
+    echo "KEYMAP=en" > /etc/vconsole.conf
+    ```
+14. Configure /etc/mkinitcpio.conf as needed and create an initial RAM disk with:
+    ```
+    mkinitcpio -p linux
+    ```
+15. Set a root password with passwd.
+
+
 
 Usage (on ArchLinux)
 --------------------
