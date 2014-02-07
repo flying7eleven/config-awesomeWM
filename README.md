@@ -71,7 +71,7 @@ Install Arch Linux
 
 8. Install some important packages
    ```
-   pacman -S vim grub dosfstools efibootmgr xf86-video-nouveau
+   pacman -S vim grub dosfstools efibootmgr
    ```
 
 9. Set the correct hostname
@@ -136,7 +136,7 @@ Usage (on ArchLinux)
 2. Install awesomewm and some other required applications
    ```
    sudo pacman -Sy
-   sudo pacman -S awesome xorg-xinit pcmanfm yaourt numlockx networkmanager network-manager-applet tmux aspell aspell-de aspell-en
+   sudo pacman -S xf86-video-nouveau xorg-server xorg-xinit awesome pcmanfm yaourt numlockx networkmanager network-manager-applet tmux aspell aspell-de aspell-en
    ```
 
 3. Install some required fonts and some other required tools from AUR:
