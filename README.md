@@ -58,46 +58,63 @@ Install Arch Linux
    ```
    pacstrap /mnt base
    ```
+
 6. Write the mountpoints into the new system
    ```
    genfstab -p /mnt >> /mnt/etc/fstab
    ```
+
 7. Go into the new system
    ```
    arch-chroot /mnt
    ```
+
 8. Install some important packages
    ```
    pacman -S vim grub dosfstools efibootmgr xf86-video-nouveau
    ```
+
 9. Set the correct hostname
    ```
    echo "hostname" > /etc/hostname
    ```
+
 10. Set the correct timezone
     ```
     ln -s /usr/share/zoneinfo/Europe/Berlin /etc/localtime
     ```
+
 11. Uncomment the selected locale in /etc/locale.gen and generate it with locale-gen.
 12. Set locale preferences in /etc/locale.conf
     ```
     locale > /etc/locale.conf
     ```
+
 13. Add console keymap and font preferences in /etc/vconsole.conf
     ```
     echo "KEYMAP=en" > /etc/vconsole.conf
     ```
+
 14. Configure /etc/mkinitcpio.conf as needed and create an initial RAM disk with:
     ```
     mkinitcpio -p linux
     ```
+
 15. Set a root password with passwd.
-16. Install the boot manager
+16. Configure the default parameters for grub
+    ```
+    vim /etc/default/grub
+    ```
+
+    If you are using an iMac you may add "reboot=pci" to your "GRZB_CMDLINE_LINUX".
+
+17. Install the boot manager
     ```
     grub-install --target=x86_64-efi --efi-directory=$esp --bootloader-id=grub --recheck --debug
     grub-mkconfig -o /boot/grub/grub.cfg
     ```
-17. Exit the newly installed system, unmount the hard drive and reboot into your new system:
+
+18. Exit the newly installed system, unmount the hard drive and reboot into your new system:
     ```
     exit
     cd /
