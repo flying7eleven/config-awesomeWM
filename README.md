@@ -92,7 +92,19 @@ Install Arch Linux
     mkinitcpio -p linux
     ```
 15. Set a root password with passwd.
-
+16. Install the boot manager
+    ```
+    grub-install --target=x86_64-efi --efi-directory=$esp --bootloader-id=grub --recheck --debug
+    grub-mkconfig -o /boot/grub/grub.cfg
+    ```
+17. Exit the newly installed system, unmount the hard drive and reboot into your new system:
+    ```
+    exit
+    cd /
+    umount -R /mnt
+    sync
+    reboot
+    ```
 
 
 Usage (on ArchLinux)
