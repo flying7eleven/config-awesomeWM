@@ -48,6 +48,81 @@ Usage (on MacOS X)
    sudo gem install tmuxinator
    ```
 
+Install Arch Linux
+------------------
+1. Boot from a CD or other install medium
+2. partition your disk. If you are using an EFI system, be sure that your first partition is a FAT32 partion with about 200MB space
+3. Format the partions
+4. Mount the partions as you want them on your system to /mnt
+5. Start the installation of the base system
+   ```
+   pacstrap /mnt base
+   ```
+
+6. Write the mountpoints into the new system
+   ```
+   genfstab -p /mnt >> /mnt/etc/fstab
+   ```
+
+7. Go into the new system
+   ```
+   arch-chroot /mnt
+   ```
+
+8. Install some important packages
+   ```
+   pacman -S vim grub dosfstools efibootmgr
+   ```
+
+9. Set the correct hostname
+   ```
+   echo "hostname" > /etc/hostname
+   ```
+
+10. Set the correct timezone
+    ```
+    ln -s /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+    ```
+
+11. Uncomment the selected locale in /etc/locale.gen and generate it with locale-gen.
+12. Set locale preferences in /etc/locale.conf
+    ```
+    locale > /etc/locale.conf
+    ```
+
+13. Add console keymap and font preferences in /etc/vconsole.conf
+    ```
+    echo "KEYMAP=en" > /etc/vconsole.conf
+    ```
+
+14. Configure /etc/mkinitcpio.conf as needed and create an initial RAM disk with:
+    ```
+    mkinitcpio -p linux
+    ```
+
+15. Set a root password with passwd.
+16. Configure the default parameters for grub
+    ```
+    vim /etc/default/grub
+    ```
+
+    If you are using an iMac you may add "reboot=pci" to your "GRZB_CMDLINE_LINUX".
+
+17. Install the boot manager
+    ```
+    grub-install --target=x86_64-efi --efi-directory=$esp --bootloader-id=grub --recheck --debug
+    grub-mkconfig -o /boot/grub/grub.cfg
+    ```
+
+18. Exit the newly installed system, unmount the hard drive and reboot into your new system:
+    ```
+    exit
+    cd /
+    umount -R /mnt
+    sync
+    reboot
+    ```
+
 
 Usage (on ArchLinux)
 --------------------
@@ -61,7 +136,7 @@ Usage (on ArchLinux)
 2. Install awesomewm and some other required applications
    ```
    sudo pacman -Sy
-   sudo pacman -S awesome xorg-xinit pcmanfm yaourt numlockx networkmanager network-manager-applet tmux aspell aspell-de aspell-en
+   sudo pacman -S xf86-video-nouveau xorg-server xorg-xinit awesome pcmanfm yaourt numlockx networkmanager network-manager-applet tmux aspell aspell-de aspell-en base-devel
    ```
 
 3. Install some required fonts and some other required tools from AUR:
