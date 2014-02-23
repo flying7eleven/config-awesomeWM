@@ -358,6 +358,8 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "Steam" },
       properties = { floating = true } },
+    { rule = { name = "Microsoft Silverlight" },
+      properties = { floating = true } },
     { rule = { class = "Mumble" },
       properties = { floating = true } },
     { rule = { class = "weka-gui-GUIChooser" },
