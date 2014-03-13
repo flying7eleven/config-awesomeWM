@@ -83,7 +83,7 @@ local keyboardwidget = require( "inc.widgets.keyboard" )
 tags = {}
 if screen.count() > 1 then
 	tags[ 1 ] = awful.tag({ "1:term", "2:www", "3:netbeans", "4:spyder", 5, 6, 7, 8, 9 }, 1, layouts[2])
-	tags[ 2 ] = awful.tag({ "1:spotify", 2, 3, 4, 5, 6, 7, 8, 9 }, 2, layouts[2])
+	tags[ 2 ] = awful.tag({ "1:taskwarrior", "2:spotfy", 3, 4, 5, 6, 7, 8, 9 }, 2, layouts[2])
 else
 	tags[ 1 ] = awful.tag({ "1:term", "2:www", "3:email", "4:steam", "5:spotify", "6:ide", 7, 8, 9 }, 1, layouts[2])
 end
