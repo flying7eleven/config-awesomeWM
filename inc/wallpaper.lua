@@ -4,7 +4,7 @@ local gears = require("gears")
 
 -- configuration - edit to your liking
 wp_index = 1
-wp_timeout  = 3600 -- change the background image every hour
+wp_timeout  = 1800 -- change the background image every half hour
 wp_user = io.popen( "whoami" ):read()
 wp_path = "/home/" .. wp_user .. "/.config/awesome/wallpaper/"
 wp_files = { "01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg", "09.jpg" }
