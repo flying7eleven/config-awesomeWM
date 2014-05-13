@@ -7,7 +7,7 @@ wp_index = 1
 wp_timeout  = 3600 -- change the background image every hour
 wp_user = io.popen( "whoami" ):read()
 wp_path = "/home/" .. wp_user .. "/.config/awesome/wallpaper/"
-wp_files = { "01.jpg", "02.jpg", "03.jpg" }
+wp_files = { "01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg", "09.jpg" }
 
 -- set the initial background
 wp_init_timer = timer { timeout = 5 }
