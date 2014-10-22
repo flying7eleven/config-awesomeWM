@@ -3,4 +3,4 @@
 	url = git@github.com:dimaursu16/awesome-themes.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
-	url = git@github.com:andyfleming/oh-my-zsh.git
+	url = git@github.com:robbyrussell/oh-my-zsh.git
