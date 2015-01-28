@@ -93,6 +93,7 @@ end
 -- Create a laucher widget and a main menu
 myawesomemenu = {
    { "reload config", awesome.restart },
+   { "shutdown menu", "myShutdownScript" },
    { "exit awesome", awesome.quit }
 }
 
