@@ -450,8 +450,8 @@ client.connect_signal("manage", function (c, startup)
 
         -- Now bring it all together
         local layout = wibox.layout.align.horizontal()
-        layout:set_left(left_layout)
-        layout:set_right(right_layout)
+        --layout:set_left(left_layout)
+        --layout:set_right(right_layout)
         layout:set_middle(middle_layout)
 
         awful.titlebar(c):set_widget(layout)
