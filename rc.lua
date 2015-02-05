@@ -371,6 +371,8 @@ awful.rules.rules = {
       properties = { floating = true, maximized_vertical = false, maximized_horizontal = false } },
     { rule = { name = "Java" },
       properties = { floating = true, maximized_vertical = false, maximized_horizontal = false } },
+    { rule = { name = "VLC" },
+      properties = { floating = true, maximized_vertical = false, maximized_horizontal = false } },
     { rule = { name = "NetBeans IDE 8.0" },
       properties = { floating = false } },
     { rule = { name = "RealLife Character Editor" },
